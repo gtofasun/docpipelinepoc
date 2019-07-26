@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="Normal" Width="210mm" Height="279mm" Padding="20px" PageSize="custom" PageType="normal" PaddingLeft="15mm" PaddingRight="15mm" PaddingTop="25mm" PaddingBottom="25mm">
+        <Frame Flow="body" ColumnCount="2" Anchors="Left,Right,Top,Bottom" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="0in" Y="-0.04166667in" Right="0in" Bottom="-0.08333334in" ColumnGap="0.25in" Width="680px" Height="878px">
+        </Frame>
+        <Frame Flow="footer" Anchors="Left,Right,Bottom" Right="-0.0625in" Bottom="-0.75in" X="0in" Y="9.291667in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" FlowIndex="1" Height="0.4791667in" BorderTopStyle="none" BorderTopWidth="0pt" VerticalAlign="top" TextAlign="left" Width="686px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                        <xhtml:link xhtml:href="../TableStyles/Footer.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="border-collapse: collapse;mc-table-style: url('../TableStyles/Footer.css');border-spacing: 0px 3px;border-left-style: none;border-left-width: 0px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: none;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" xhtml:class="TableStyle-Footer" xhtml:cellspacing="0">
+                            <xhtml:col xhtml:style="width: 7.00in;" xhtml:class="Column-Column1" />
+                            <xhtml:col xhtml:style="width: 0.5in;" xhtml:class="Column-Column1" />
+                            <xhtml:tbody>
+                                <xhtml:tr xhtml:class="Body-Body1">
+                                    <xhtml:td xhtml:class="BodyB-Column1-Body1">
+										<xhtml:p xhtml:class="footer" xhtml:style="text-align: left;"><MadCap:variable xhtml:name="Default.Product" />&#160;<MadCap:variable xhtml:name="Default.Release" /> <MadCap:variable xhtml:name="Default.Title" />&#160;</xhtml:p>
+										<xhtml:p xhtml:class="footerCopyright"><MadCap:variable xhtml:name="Default.PartNumber" />&#160;<MadCap:variable xhtml:name="Default.Revision" />&#160;&#160;<MadCap:variable xhtml:name="Default.DateLong" />&#160;&#160;<MadCap:variable xhtml:name="Default.Copyright" />&#160;<MadCap:variable xhtml:name="Default.CompanyName" /></xhtml:p>
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:class="BodyA-Column1-Body1" xhtml:style="vertical-align: bottom;">
+                                        <xhtml:p xhtml:class="pagenum" xhtml:style="margin-right: 3pt;border-left-style: none;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;"><MadCap:variable xhtml:name="System.PageNumber" />
+                                        </xhtml:p>
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="header" Anchors="Left,Right,Top" Right="-0.01041667in" Bottom="9.375in" X="0in" Y="-0.625in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" Height="0.2708333in" VerticalAlign="bottom" TextAlign="left" BorderBottomStyle="none" BorderBottomWidth="0pt" BorderBottomColor="#000000" Width="681px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #b90b67;margin-left: 0;margin-right: auto;">
+                            <xhtml:col />
+                            <xhtml:col />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td>
+                                        <xhtml:p xhtml:class="headerIndex" MadCap:autonum="INDEX">&#160;</xhtml:p>
+                                    </xhtml:td>
+                                    <xhtml:td>
+                                        <xhtml:p>&#160;</xhtml:p>
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+    <Page Name="First" Width="210mm" Height="279mm" Padding="20px" PageSize="custom" PageType="first" PaddingLeft="15mm" PaddingRight="15mm" PaddingTop="25mm" PaddingBottom="25mm">
+        <Frame Flow="body" ColumnCount="2" Anchors="Left,Right,Top,Bottom" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="0in" Y="0.40625in" Right="0in" Bottom="-0.09375in" ColumnGap="0.25in" Width="680px" Height="836px" FlowIndex="1">
+        </Frame>
+        <Frame X="0px" Y="-35px" Width="679px" Height="50px" Flow="body" Right="1px" Bottom="851px" Anchors="" FlowIndex="0">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="Index" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="INDEX">&#160;</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Anchors="Left,Right,Bottom" Right="-0.01041667in" Bottom="-0.75in" X="0in" Y="9.291667in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" FlowIndex="1" Height="0.4791667in" BorderTopStyle="none" BorderTopWidth="0pt" VerticalAlign="top" TextAlign="left" Width="681px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                        <xhtml:link xhtml:href="../TableStyles/Footer.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="border-collapse: collapse;mc-table-style: url('../TableStyles/Footer.css');border-spacing: 0px 3px;border-left-style: none;border-left-width: 0px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;border-right-color: #000000;border-bottom-style: none;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" xhtml:class="TableStyle-Footer" xhtml:cellspacing="0">
+                            <xhtml:col xhtml:style="width: 7.00in;" xhtml:class="Column-Column1" />
+                            <xhtml:col xhtml:style="width: 0.5in;" xhtml:class="Column-Column1" />
+                            <xhtml:tbody>
+                                <xhtml:tr xhtml:class="Body-Body1">
+                                    <xhtml:td xhtml:class="BodyB-Column1-Body1">
+										<xhtml:p xhtml:class="footer" xhtml:style="text-align: left;"><MadCap:variable xhtml:name="Default.Product" />&#160;<MadCap:variable xhtml:name="Default.Release" /> <MadCap:variable xhtml:name="Default.Title" />&#160;</xhtml:p>
+										<xhtml:p xhtml:class="footerCopyright"><MadCap:variable xhtml:name="Default.PartNumber" />&#160;<MadCap:variable xhtml:name="Default.Revision" />&#160;&#160;<MadCap:variable xhtml:name="Default.DateLong" />&#160;&#160;<MadCap:variable xhtml:name="Default.Copyright" />&#160;<MadCap:variable xhtml:name="Default.CompanyName" /></xhtml:p>
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:class="BodyA-Column1-Body1" xhtml:style="vertical-align: bottom;">
+                                        <xhtml:p xhtml:class="pagenum" xhtml:style="margin-right: 3pt;border-left-style: none;border-left-width: 1px;border-left-color: #000000;border-right-style: none;border-right-width: 1px;"><MadCap:variable xhtml:name="System.PageNumber" />
+                                        </xhtml:p>
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>

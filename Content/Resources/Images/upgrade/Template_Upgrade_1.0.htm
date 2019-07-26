@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2633" MadCap:lastWidth="1220">
+    <head>
+        <link href="../../TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../TableStyles/List2.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p class="productLineNotes"><MadCap:variable name="Default.Product" />
+        </p>
+        <p class="TitleNotes">TECHNICAL NOTE</p>
+        <p class="SubjectNotes"><MadCap:variable name="Default.SubjectNotes" />
+        </p>
+        <h3 class="ntoc" MadCap:conditions="Default.PrintOnly">Contents</h3>
+        <MadCap:miniTocProxy style="mc-toc-depth: 3;" />
+        <h2 class="pageBreak">About the Gemalto Flare Template</h2>
+        <p>The Gemalto Flare template is a rebranded version of the original SafeNet Flare template. It also adds some features introduced in Flare 10 and 11. Although the template will work in Flare 10, Flare 11 is recommended. The Gemalto Flare template does not support Flare 9.</p>
+        <h3>Changes Introduced in this Version</h3>
+        <p>The changes to the template are minimal, and are primarily focused on Gemalto rebranding. The changes are detailed in the following sections.</p>
+        <h4>Headings</h4>
+        <p>Headings are now all purple (R:108 B:40 G:107) and bold. The autonumber for the <b>h1.chapter</b> style now just inserts a big orange number instead of the text Chapter &lt;n&gt;. These changes are captured in <b>Gemalto_Template.css</b>.</p>
+        <h4>Cover</h4>
+        <p>The cover is all new, with a brown rectangle, purple rectangle, Gemalto logo, and white text. These changes are captured in <b>Cover.htm</b>. The logo is in &lt;project&gt;/<b>Content/Resources/Images/icons/gemalto_logo.png</b></p>
+        <h4>Variables</h4>
+        <p>The following variables have been updated:</p>
+        <table style="width: 100%;mc-table-style: url('../../TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" style="width: 132px;" />
+            <col class="TableStyle-Page-Column-Column1" style="width: 174px;" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Page-Head-Header1">
+                    <th class="TableStyle-Page-HeadE-Column1-Header1">Variable name</th>
+                    <th class="TableStyle-Page-HeadE-Column1-Header1">Previous value</th>
+                    <th class="TableStyle-Page-HeadD-Column1-Header1">New value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">CompanyName</td>
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">SafeNet</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Gemalto</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">CompanyNameLong</td>
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">SafeNet, Inc.</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Gemalto NV</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">Copyright</td>
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">Manually entered text. For example, Copyright &lt;year&gt;.</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>"Copyright" yyyy</p>
+                        <p>Automatically inserts the word <b>Copyright</b> and the current year. For example, Copyright 2015</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">DateLong</td>
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">Manually entered text. For example, 15 July 2015</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>dd MMMM yyyy</p>
+                        <p>Automatically inserts the current day, month, and year. For example, 15 July 2015.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1">DateShort</td>
+                    <td class="TableStyle-Page-BodyB-Column1-Body1">Manually entered text. For example, July 2015</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                        <p>MMMM yyyy</p>
+                        <p>Automatically inserts the current month and year. For example, July 2015.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #e06c08;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">DateTime variables were added in Flare 10. You must you Flare 10 or higher to use the new Copyright, DateLong, and DateShort variables.</p>
+        <h4>Cross-Reference Formats</h4>
+        <p>Cross-references now use the {pageref} operator, which creates context-sensitive page references in the PDF targets (above, below, on next/previous page, on page &lt;n&gt;). Cross-references also display differently for the online and print mediums. For print, the referenced paratext is enclosed in quotation marks. For online, there are no quotation marks.</p>
+        <h4>Page Layouts</h4>
+        <p>All page layouts were updated to remove the orange bar from the top of the page. Additional changes are as follows:</p>
+        <table style="width: 100%;mc-table-style: url('../../TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">FrontMatter.flpgl</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Updated the Title page to add the the new cover.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">
+                        <p>Index.flpgl</p>
+                    </td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">Updated to correct a flow issue that caused the Index heading to align with the center of the page.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Master Pages</h4>
+        <p>The template uses a single master page for the HTML output. In the previous version of the template, this file was named <b>SafeNet_Book.flmsp</b>. It has been renamed <b>Default.flmsp</b> in the new template. The content remains the same.</p>
+        <h4>Skin</h4>
+        <p>The skin used for the HTML&#160;output has been updated to remove the orange bar and to use the Gemalto logo. Everything else remains the same.</p>
+        <h4>Boilerplate Graphics</h4>
+        <p>All graphics used in the template are located in the &lt;project&gt;/<b>Content/Resources/Images/icons</b> directory. </p>
+        <h2>Deploying  the Gemalto Flare Template</h2>
+        <p>The Gemalto template is a drop-in replacement for the SafeNet template. Deploying the template involves moving a few files/directories from the new template into your existing projects, and updating your target files to point to the new files.</p>
+        <h5>To migrate to the <MadCap:variable name="Default.CompanyName" /> template</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Open the  <b>Gemalto_Flare_Template.flprjzip</b> file in Flare 10 or Flare 11. The project is automatically unzipped to the current directory. </p>
+        <p class="ol1" MadCap:autonum="2.">In Windows Explorer, copy the updated files from the template <b>Content/Resources</b> folder   to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Go to the template <b>Content/Resources</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>Stylesheets/Gemalto_Template.css</b> file to the corresponding folder in your project. </p>
+        <p class="ol2" MadCap:autonum="c.">Copy the <b>PageLayouts</b> folder to you project, overwriting the existing <b>PageLayouts</b> folder.</p>
+        <p class="ol2" MadCap:autonum="d.">Copy the <b>Images/icons</b> folder to the <b>Images</b> folder in your project</p>
+        <p class="ol1" MadCap:autonum="3.">In Windows Explorer, copy the updated files from the template <b>Project</b> folder   to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Go to the template <b>Project</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>Variables/Default.flvar</b> file to the corresponding folder in your project. </p>
+        <p class="ol2" MadCap:autonum="c.">Copy the <b>Skins/Gemalto_HTML5</b> file to the corresponding folder in your project. </p>
+        <p class="ol1" MadCap:autonum="4.">Update your target files to point to the new files:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Open your project in Flare and go to the Content Explorer.</p>
+        <p class="ol2" MadCap:autonum="b.">Rename the <b>SafeNet_Book.flmsp</b> in the <b>MasterPages</b> folder to <b>Default.flmsp</b>. Click <b>Update Links</b> when prompted. </p>
+        <p class="ol2" MadCap:autonum="c.">Go to the Project Organizer.</p>
+        <p class="ol2" MadCap:autonum="d.">Open each target, in turn, and update the <b>General</b> &gt;&#160;<b>Master Stylesheet</b> setting to point to the new CSS (<b>Resources/Stylesheets/Gemalto_Template</b>).</p>
+        <p class="ol2" MadCap:autonum="e.">For each HTML&#160;target, update the following settings:</p>
+        <table style="width: 92%;mc-table-style: url('../../TableStyles/List2.css');" class="TableStyle-List2" cellspacing="0">
+            <col class="TableStyle-List2-Column-Column1" />
+            <col class="TableStyle-List2-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-List2-Body-Body1">
+                    <td class="TableStyle-List2-BodyE-Column1-Body1"><b>Skin</b> &gt; <b>Skin</b></td>
+                    <td class="TableStyle-List2-BodyD-Column1-Body1">Gemalto_HTML5</td>
+                </tr>
+                <tr class="TableStyle-List2-Body-Body1">
+                    <td class="TableStyle-List2-BodyB-Column1-Body1"><b>Advanced</b> &gt;&#160;<b>Master Page</b></td>
+                    <td class="TableStyle-List2-BodyA-Column1-Body1">Resources/MasterPages/Default</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ol1" MadCap:autonum="5.">Replace the existing Support Contacts table with the updated version. The new table is stored as a snippet in the <b>Content/Resources/Snippets</b> folder.</p>
+        <h2>Support Contacts</h2>
+        <MadCap:snippetBlock src="../../Snippets/support_contacts.flsnp" />
+    </body>
+</html>

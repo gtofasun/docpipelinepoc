@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term0">
+    <Terms>
+      <Term>A term</Term>
+    </Terms>
+    <Definition
+      Link="">A definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term1">
+    <Terms>
+      <Term>B term</Term>
+    </Terms>
+    <Definition
+      Link="">B definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term2">
+    <Terms>
+      <Term>C term</Term>
+    </Terms>
+    <Definition
+      Link="">C definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term3">
+    <Terms>
+      <Term>D term</Term>
+    </Terms>
+    <Definition
+      Link="">D definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term4">
+    <Terms>
+      <Term>E term</Term>
+    </Terms>
+    <Definition
+      Link="">E definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term5">
+    <Terms>
+      <Term>F term</Term>
+    </Terms>
+    <Definition
+      Link="">F definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term6">
+    <Terms>
+      <Term>G term</Term>
+    </Terms>
+    <Definition
+      Link="">G definiton</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term7">
+    <Terms>
+      <Term>H term</Term>
+    </Terms>
+    <Definition
+      Link="">H definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term8">
+    <Terms>
+      <Term>I term</Term>
+    </Terms>
+    <Definition
+      Link="">I definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term9">
+    <Terms>
+      <Term>J term</Term>
+    </Terms>
+    <Definition
+      Link="">J definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term10">
+    <Terms>
+      <Term>K term</Term>
+    </Terms>
+    <Definition
+      Link="">K definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term11">
+    <Terms>
+      <Term>L term</Term>
+    </Terms>
+    <Definition
+      Link="">L definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term12">
+    <Terms>
+      <Term>M term</Term>
+    </Terms>
+    <Definition
+      Link="">M definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term13">
+    <Terms>
+      <Term>N term</Term>
+    </Terms>
+    <Definition
+      Link="">N definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term14">
+    <Terms>
+      <Term>O term</Term>
+    </Terms>
+    <Definition
+      Link="">O definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term15">
+    <Terms>
+      <Term>P term</Term>
+    </Terms>
+    <Definition
+      Link="">P definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term16">
+    <Terms>
+      <Term>Q term</Term>
+    </Terms>
+    <Definition
+      Link="">Q definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term17">
+    <Terms>
+      <Term>R term</Term>
+    </Terms>
+    <Definition
+      Link="">R definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term18">
+    <Terms>
+      <Term>S term</Term>
+    </Terms>
+    <Definition
+      Link="">S definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term19">
+    <Terms>
+      <Term>T term</Term>
+    </Terms>
+    <Definition
+      Link="">T definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term20">
+    <Terms>
+      <Term>U term</Term>
+    </Terms>
+    <Definition
+      Link="">U definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term21">
+    <Terms>
+      <Term>V term</Term>
+    </Terms>
+    <Definition
+      Link="">V definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term22">
+    <Terms>
+      <Term>W term</Term>
+    </Terms>
+    <Definition
+      Link="">W definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term23">
+    <Terms>
+      <Term>X term</Term>
+    </Terms>
+    <Definition
+      Link="">X definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term24">
+    <Terms>
+      <Term>Y term</Term>
+    </Terms>
+    <Definition
+      Link="">Y definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term25">
+    <Terms>
+      <Term>Z term</Term>
+    </Terms>
+    <Definition
+      Link="">Z definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term26">
+    <Terms>
+      <Term>Ab term</Term>
+    </Terms>
+    <Definition
+      Link="">Ab definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="MyGlossary.Term27">
+    <Terms>
+      <Term>Ac term</Term>
+    </Terms>
+    <Definition
+      Link="">Ac definition</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

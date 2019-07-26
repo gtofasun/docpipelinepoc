@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Upgrade.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Note.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/Gemalto_Template.css"
+  DisableAutoSync="true"
+  ConditionTagExpression="include[Default.PrintOnly] exclude[Default.Note or Default.ScreenOnly] ">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF_CONTENT.fldes" />
+    <Destination
+      Link="/Project/Destinations/PDF_WEB.fldes" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="Default/Product">Gemalto Flare Template</Variable>
+    <Variable
+      Name="Default/Release">2.0</Variable>
+    <Variable
+      Name="Default/Revision">Rev. A</Variable>
+    <Variable
+      Name="Default/Title">Deployment Guide</Variable>
+  </Variables>
+  <DocumentProperties
+    Title="Deploying the Gemalto Flare Template"
+    Author="Gemalto" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="Fit"
+    CollapsedBookmarks="false"
+    TitleBar="DocumentTitle" />
+</CatapultTarget>

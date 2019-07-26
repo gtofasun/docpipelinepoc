@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data_mc_search_type="Stem" data_mc_help_system_file_name="index.xml" data_mc_path_to_help_system="../../../" data_mc_target_type="WebHelp2" data_mc_runtime_file_type="Topic" data_mc_preload_images="false" data_mc_in_preview_mode="false" data_mc_medium="non-print" data_mc_toc_path="BookTemplate|Creating Content" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta charset="utf-8" /><title></title>
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Breadcrumbs.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/plugins.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/MadCapAll.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script></head>
+    <body>
+        <h2>Cross-References and Hyperlinks</h2>
+        <p>Cross-references and hyperlinks serve as navigation aids to help readers quickly and easily find related information.</p>
+        <p> When creating links, always use cross-references if possible. Cross-references are preferred over hyperlinks for the following reasons:</p>
+        <p class="ul1" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">they automatically update when you change the source.</p>
+        <p class="ul1" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">in print outputs, they include the page number for the reference.</p>
+        <h3><a name="Cross-re"></a>
+  Cross-References</h3>
+        <p>Flare allows you to create cross-references to headings and bookmarks within the current topic or other topics within the project. When cross-referencing headings other than the top-level heading in other topics, you need to click on the Bookmark icon. Headings (h1, h2 and h3) are automatically bookmarked. If you want to cross-reference to a paragraph other than a heading, you need to bookmark it first.</p>
+        <h4>Cross-Reference Formats</h4>
+        <p>This template provides the following cross-reference formats:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Page-Head-Header1">
+                    <th class="TableStyle-Page-HeadE-Column1-Header1">Cross-reference format name</th>
+                    <th class="TableStyle-Page-HeadE-Column1-Header1">Output format</th>
+                    <th class="TableStyle-Page-HeadE-Column1-Header1">Cross-reference format</th>
+                    <th class="TableStyle-Page-HeadD-Column1-Header1">Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" rowspan="2">Madcap:xref</td>
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">PDF</td>
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">{paratext} {pageref}</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1" rowspan="2">See <MadCap:xref href="#Cross-re">
+  Cross-References</MadCap:xref></td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">HTML</td>
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">{paratext}</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1">Madcap:xref.ParaNum</td>
+                    <td class="TableStyle-Page-BodyB-Column1-Body1">PDF and HTML</td>
+                    <td class="TableStyle-Page-BodyB-Column1-Body1">{paranumonly}</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">This is a cross-reference to step <MadCap:xref href="#xref_Step2" class="ParaNum">2</MadCap:xref> (the <b>xref_Step2</b> bookmark) in the procedure <MadCap:xref href="#To_insert_xref">To insert a cross-reference</MadCap:xref>.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Inserting Cross-References</h4>
+        <p>Use the <b>Insert Cross-Reference</b> dialog to insert a cross-reference. </p>
+        <h5><a name="To_insert_xref"></a>To insert a cross-reference</h5>
+        <p class="ol1Start" data_mc_autonum="1." MadCap:autonum="1.">Press <b>CTRL-Shift R</b>, or use the GUI, to open the <b>Insert Cross-Reference</b> dialog.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="2."><a name="xref_Step2"></a>Select either <b>Topic in project</b> or <b>Place in this document</b>, as relevant, in the <b>Link to:</b> field.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="3.">Navigate to the topic of heading you want to reference.</p>
+        <p class="ol1" data_mc_autonum="4." MadCap:autonum="4.">Click <b>OK</b> to insert the cross-reference.</p>
+        <h3><a name="Hyperlin"></a>Hyperlinks</h3>
+        <p>Use hyperlinks only where it is not possible to use a cross-reference. A example of a legitimate use for a hyperlink is on the <b>Home.htm</b> page, where the PDF icons and document titles use hyperlinks to link to a specific document.</p>
+        <h4>Inserting Hyperlinks</h4>
+        <p>Use the <b>Insert Cross-Reference</b> dialog to insert a cross-reference. </p>
+        <h5>To insert a hyperlink</h5>
+        <p class="ol1Start" data_mc_autonum="1." MadCap:autonum="1.">Press <b>CTRL-K</b>, or use the GUI, to open the <b>Insert Hyperlink</b> dialog.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="2.">Configure the link as required and click <b>OK</b> to insert the link.</p>
+    </body>
+</html>

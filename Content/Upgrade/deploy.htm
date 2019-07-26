@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/List1.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/List2.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Deploying  the Template</h1>
+        <p>The Gemalto 2.0 template is a drop-in replacement for the  Gemalto 1.0 template, with a few naming changes to provide better overall consistency. To deploy the new template you need to update your projects to include the following components that are new or changed in this release:</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">the CSS (<b>Gemalto_Template.css</b>). Moving forward, all updates to the CSS will use the same name, with the version embedded as a comment.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Table styles.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Page layouts (for PDF outputs)</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Master pages (for HTML outputs)</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Boilerplate graphics (icons, watermarks)</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">HTML skins</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Variable definitions</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Boilerplate text in the frontmatter and preface and the snippets used to populate these topics.</p>
+        <p>Deploying the template involves the following:</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">renaming some existing files.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">removing the hard return from any existing h1.chapter, h1.preface, and h1.appendix headings.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"> moving a few files/directories from the new template into your existing projects.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">updating your target files to point to the new files.</p>
+        <h2>Preparing for the Upgrade</h2>
+        <p>To prepare for the upgrade, you need to install the new template on a drive that you can access from the Flare projects you want to update.</p>
+        <h5><a name="MigrateProcedure"></a>To prepare for the upgrade</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Close all Flare instances that are accessing the project you want to migrate to the new template.</p>
+        <p class="ol1" MadCap:autonum="2.">Make a backup of your project.</p>
+        <p class="ol1" MadCap:autonum="3.">Open the  <b>Gemalto_Flare_Template.flprjzip</b> file in Flare 10 or higher (Flare 2017r3 or higher is recommended). The project is automatically unzipped to the current directory. </p>
+        <p class="ol1" MadCap:autonum="4.">Close Flare.</p>
+        <h2>Updating the Stylesheets in Your Project</h2>
+        <p>The updated stylesheet is named <b>Gemalto_Template.css</b>. If your current CSS uses a different name, the easiest way to update to the new CSS is to rename you current CSS first (in Flare) and then import the new CSS. </p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">Future template releases will use <b>Gemalto_Template.css</b> as the CSS file name, regardless of branding, so changing the name will make future upgrades simpler.</p>
+        <h5>To update your project's stylesheets</h5>
+        <p class="ol1Start" MadCap:autonum="1."><a name="StepExample"></a>Open your project in Flare.</p>
+        <p class="ol1" MadCap:autonum="2.">Rename your existing CSS to <b>Gemalto_Template.css</b>:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Go to the <b>Content/Resources/Stylesheets</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Rename your CSS.</p>
+        <p class="ol2" MadCap:autonum="c.">When prompted, update all affected files.</p>
+        <p class="ol1" MadCap:autonum="3.">Use Windows Explorer to copy the updated stylesheets from the template to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Go to the template <b>Content/Resources/Stylesheets</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>Gemalto_Template.css</b> file to the <b>Content/Resources/Stylesheets</b> folder in your project.</p>
+        <h2>Updating the Table Styles in Your Project</h2>
+        <p>The table styles now include a <b>List3</b> style for use with tables inserted into a level3 list, and <b>Page_no_lines</b> style, which allows you to create a table with no border lines, which is useful for floating graphics or text. Other table styles are unchanged. See the <i>Template User Guide</i> for more information.</p>
+        <h5>To update your project's table styles</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Use Windows Explorer to copy the updated table styles from the template to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Go to the template <b>Content/Resources</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>TableStyles</b> folder to the <b>Content/Resources</b> folder in your project, overwriting the existing folder and its contents.</p>
+        <h2>Updating the Page Layouts in Your Project</h2>
+        <p>The page layouts in the new template have been updated as follows:</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">to fix issues with the headers and footers.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"> to update the look of the title page for books, and the first page for notes.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"> to add page layouts you can use to watermark your documents as <b>Draft</b> or <b>Confidential</b>.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"> to rename the page layouts used for notes (release and technical notes) for consistency. The easiest way to update to the new notes page layouts is to rename your current page layouts first (in Flare) and then import the new page layouts.</p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">The Technote template has been deprecated (the one that includes a Subject on the title page, in addition to the title). You should now use the Note template for all technical/release notes. If you do not use the Technote template  you don't need to copy the Technote page layout. See <MadCap:xref href="overview.htm#Technica">"Technical Note Template is Deprecated"&#160;on page&#160;1</MadCap:xref> for more information.</p>
+        <h5>To update your project's page layouts</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Open your project and rename your existing notes page layouts to use the new names. This will update all of your TOCs to use the new page layout names so that when you import the new page layouts they are automatically applied to your existing targets:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Rename CRN.flpgl to Note.flpgl. When prompted, accept the change.</p>
+        <p class="ol1" MadCap:autonum="2.">Use Windows Explorer to copy the updated PDF page layouts from the template to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Go to the template <b>Content/Resources</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>PageLayouts</b> folder to your project, overwriting the existing <b>PageLayouts</b> folder.</p>
+        <h2>Updating the Master Pages in Your Project</h2>
+        <p>The following master pages have been added to the template for use with the top-navigation (HTML_FRAMELESS) skin:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">FRAMELESS</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Basic top-navigation  with only the Breadcrumbs proxy.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">FRAMELESS_MENU</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Includes the Breadcrumbs proxy, the context-sensitive Menu proxy, and the Topic Toolbar proxy.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">FRAMELESS_TOOLBAR</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Includes the  Breadcrumbs proxy, the context-sensitive Menu proxy, and the Topic Toolbar proxy.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">HOME</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                        <p>Does not include any proxies. Used for home pages that provide embedded navigation (links).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The <b>Default.flmsp</b>, used for the tri-pane (FRAMES) skin, is unchanged.</p>
+        <h5>To update your project's master pages</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Use Windows Explorer to copy the updated HTML master pages from the template to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Go to the template <b>Content/Resources/MasterPages</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>MasterPages</b> folder to your project, overwriting the existing <b>Default.flmsp</b> file.</p>
+        <div class="note">
+            <p MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">If your project supports multiple products, you need to have separate master pages for each product with product-specific hyperlinks from the <b>Home</b> string in the breadcrumbs to the home page for the product. The default hyperlink is to <b>Contents/Home.htm</b>. This applies to the tri-pane FRAMES outputs only. </p>
+            <p>The FRAMELESS outputs do not include the Home link in the breadcrumbs, since clicking on the Gemalto logo takes you to the Home page (as defined by the <b>Startup topic</b> field in the target.</p>
+        </div>
+        <h2>Updating the Boilerplate Graphics in Your Project</h2>
+        <p>The boilerplate graphics include the images used in the page layouts, notification icons, and skins. The paths are hard-coded in the page layouts and CSS, so you need to place them in the Resources/Images folder so that the paths in your project and the template are the same.</p>
+        <h5>To update the boilerplate graphics in your project</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Use Windows Explorer to copy the updated boilerplate graphics from the template to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Copy the <b>Content/Resources/Images/template</b> folder to the <b>Content/Resources/Images</b> folder in your project, overwriting any images with the same name as the copied images.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>Content/Resources/Images/skins</b> folder to the <b>Content/Resources/Images</b> folder in your project, overwriting any images with the same name as the copied images.</p>
+        <h2>Updating the Skins in Your Project</h2>
+        <p>You can skin your outputs using the standard frame-based, left navigation skin, the frameless top-naviagtion skin, or the HTML4 (deprecated) skin. The HTML_FRAMELESS skin also can also use the FRAMELESS_TOOLBAR and FRAMELESS_MENU proxies by applying the FRAMELESS_TOOLBAR and FRAMELESS_MENU master pages to your top-navigation (FRAMELESS) targets. </p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">The FRAMELESS_TOOLBAR proxy adds a  toolbar that provides previous, next, print, and remove highlight buttons. It is styled using the FRAMELESS_TOOLBAR skin component.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">The  FRAMELESS_MENU proxy adds a context-sensitive menu for enhanced navigation.  It is styled using the FRAMELESS_MENU skin component.</p>
+        <p>Refer to <MadCap:xref href="../User_guide/Outputs/HTML_TopNav.htm">"HTML Top-Navigation Outputs"&#160;on page&#160;1</MadCap:xref> in the <i>Flare Template User Guide</i> for more information.</p>
+        <h5>To update your project's skins</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Use Windows Explorer to copy the updated skins from the template to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a."> Go to the template <b>Project/Skins</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>HTML_FRAMELESS</b>, <b>HTML_FRAMES</b>, and <b>HTML4</b> skins and the <b>FRAMELESS_TOOLBAR</b> and <b>FRAMELESS_MENU</b> skin components to the <b>Skins</b> folder in your project, overwriting the existing files.</p>
+        <h2>Updating the Variables in Your Project</h2>
+        <p>The template uses only the Default variable set. Although you can create additional sets, this is strongly discouraged, and is unnecessary, since you can override the default variable values in the targets. In addition, every variable set you create requires a new set of master pages and page layouts that reference the variable set. This can quickly get out of hand. In addition, Gemalto is moiving from product documentation to solutions documentation that includes content from multiple authors. To assure easy integration of the documentation for multiple products  into a single solution, it is imperative that they all use the same template.</p>
+        <h5>To update your project's variables</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Use Windows Explorer to copy the updated variables from the template to your project:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Go to the template <b>Project/Variables</b> folder.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>Default.flvar</b> file to the corresponding folder in your project. If you have not added any variables you can overwrite the existing file. Otherwise, open Flare and compare your variables files with the new variable file and update the variable definitions accordingly. </p>
+        <h2>Updating Your Targets</h2>
+        <p>If you did not rename your CSS and skins to use the same names as defined in the template prior to importing them into the project, you will have to update your targets to point to the new files.</p>
+        <h5> To update your targets</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Update your targets to point to the new files:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Open your project in Flare and go to the Project Organizer.</p>
+        <p class="ol2" MadCap:autonum="b.">Open each target, in turn, and update the <b>General</b> &gt;&#160;<b>Master Stylesheet</b> setting to point to the new CSS (<b>Resources/Stylesheets/Gemalto_Template</b>).</p>
+        <p class="tip" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;TIP&lt;/b&gt; &#160;&#160;&lt;/span&gt;">If you have a lot of targets, it may be more efficient to update the targets in source, using the <b>Find and Replace in Files</b> function to <b>Find in Source Code</b> in the <b>Targets</b> folder. The string that defines the CSS used by the target is <b>MasterStylesheet=</b>"&lt;path_to_css&gt;". </p>
+        <p class="ol2" MadCap:autonum="c.">For each HTML&#160;target that uses the left-navigation frame-based skin, update the following settings:</p>
+        <table style="width: 92%;mc-table-style: url('../Resources/TableStyles/List2.css');" class="TableStyle-List2" cellspacing="0">
+            <col class="TableStyle-List2-Column-Column1" />
+            <col class="TableStyle-List2-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-List2-Body-Body1">
+                    <td class="TableStyle-List2-BodyE-Column1-Body1"><b>Skin</b> &gt; <b>Skin</b></td>
+                    <td class="TableStyle-List2-BodyD-Column1-Body1">HTML_FRAMES</td>
+                </tr>
+                <tr class="TableStyle-List2-Body-Body1">
+                    <td class="TableStyle-List2-BodyB-Column1-Body1"><b>Advanced</b> &gt;&#160;<b>Master Page</b></td>
+                    <td class="TableStyle-List2-BodyA-Column1-Body1">Resources/MasterPages/Default</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ol2" MadCap:autonum="d.">For each HTML&#160;target that uses the top-navigation frameless skin, update the following settings:</p>
+        <table style="width: 92%;mc-table-style: url('../Resources/TableStyles/List2.css');" class="TableStyle-List2" cellspacing="0">
+            <col class="TableStyle-List2-Column-Column1" />
+            <col class="TableStyle-List2-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-List2-Body-Body1">
+                    <td class="TableStyle-List2-BodyE-Column1-Body1"><b>Skin</b> &gt; <b>Skin</b></td>
+                    <td class="TableStyle-List2-BodyD-Column1-Body1">HTML_FRAMELESS</td>
+                </tr>
+                <tr class="TableStyle-List2-Body-Body1">
+                    <td class="TableStyle-List2-BodyB-Column1-Body1"><b>Advanced</b> &gt;&#160;<b>Master Page</b></td>
+                    <td class="TableStyle-List2-BodyA-Column1-Body1">
+                        <p>Select one of the following:</p>
+                        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Resources/MasterPages/FRAMELESS for only the Breadcrumbs proxy.</p>
+                        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Resources/MasterPages/FRAMELESS for the Breadcrumbs and Topic Toolbar proxies.</p>
+                        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">Resources/MasterPages/FRAMELESS for the Breadcrumbs, Topic Toolbar, and Menu proxies</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Updating the Snippets in Your Project</h2>
+        <p>This template uses snippets for the boilerplate material in the preface.</p>
+        <h5> To update your project's snippets</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Replace the existing support contacts, disclaimer, and trademarks snippets with the updated versions.</p>
+        <p class="ol2Start" MadCap:autonum="a.">Copy the <b>Content/Resources/Snippets</b> folder  in the template to the <b>Content/Resources</b> folder in project overwriting any snippets with the same name as the copied snippets. </p>
+        <p class="ol1" MadCap:autonum="2.">Update the Preface for each document to include updates to the standard boilerplate material. </p>
+        <p class="ol2Start" MadCap:autonum="a.">Copy the <b>Content/BookTemplate/Preface/Support.htm</b> file from the template to each document in your project, overwriting the existing file.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>Content/BookTemplate/Preface/Conventions.htm</b> file from the template to each document in your project, overwriting the existing file.</p>
+        <h2><a name="Removing"></a>Removing the Hard Return from the h1.chapter, h1.preface, and h1.appendix Headings</h2>
+        <p>H1 headings have been reformatted to remove the need to manually insert a hard return (see <MadCap:xref href="overview.htm#H1">"H1 Heading Changes"&#160;on page&#160;1</MadCap:xref>). As a result, you need to remove the existing hard returns. You can do this manually by opening each chapter, preface, or appendix and removing the break, or you can use the following procedure  to find the affected files and update the HTML source code, which is much faster.</p>
+        <h5>To remove the hard returns from the h1.chapter, h1.preface, and h1.appendix headings</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Open you project in Flare</p>
+        <p class="ol1" MadCap:autonum="2.">Select <b>Home &gt; Find and Replace in Files</b></p>
+        <p class="ol1" MadCap:autonum="3.">Set the following options:</p>
+        <table style="width: 97%;mc-table-style: url('../Resources/TableStyles/List1.css');" class="TableStyle-List1" cellspacing="0">
+            <col class="TableStyle-List1-Column-Column1" />
+            <col class="TableStyle-List1-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1" style="font-weight: bold;">Find in:</td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">(content folder). You can also select (pick a folder) if you want to want to do it a folder at a time.</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1" style="font-weight: bold;">File types:</td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">Topics</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1" style="font-weight: bold;">Find Options:</td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">Check the <b>Find in source code</b> checkbox</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyB-Column1-Body1" style="font-weight: bold;">Search type:</td>
+                    <td class="TableStyle-List1-BodyA-Column1-Body1">Regular Text</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ol1" MadCap:autonum="4.">Search for the chapters by entering the following string in the <b>Find:</b> field:</p><pre class="listLevel1">h1 class="chapter"</pre>
+        <p class="ol1" MadCap:autonum="5.">Click the <b>Find Next</b> button. The first chapter found is opened in text mode, with the search phrase highlighted.</p>
+        <p class="ol1" MadCap:autonum="6.">Remove the &lt;br /&gt; and other extraneous data from the &lt;h1 class="chapter"&gt;...&lt;/h1&gt; string so that it contains only the chapter title. For example, if the following string is found:</p><pre class="listLevel1">&lt;h1 class="chapter"&gt;<br />&lt;br /&gt;Cloning and Key Export&lt;/h1&gt;</pre>
+        <p class="listLevel1">Edit to so that it looks like this:</p><pre class="listLevel1">&lt;h1 class="chapter"&gt;Cloning and Key Export&lt;/h1&gt;</pre>
+        <p class="listLevel1">The &lt;h1&gt;...&lt;/h1&gt; strings may also contain autonumber statements. If they do, remove the autonumber statements as well. For example, if the following string is found:</p><pre class="listLevel1">&lt;h1 class="chapter" MadCap:autonum=" &amp;#160;&amp;#160;"&gt;</pre><pre class="listLevel1">&lt;br /&gt;Hardware Security and Handling&lt;/h1&gt;</pre>
+        <p class="listLevel1">Edit to so that it looks like this:</p><pre class="listLevel1" xml:space="preserve">&lt;h1 class="chapter"&gt;Hardware Security and Handling&lt;/h1&gt;</pre>
+        <p class="ol1" MadCap:autonum="7.">Continue to click the <b>Find Next</b> button to and update each chapter heading.</p>
+        <p class="ol1" MadCap:autonum="8.">Perform a <b>Save All</b> (CTRL-SHIFT-S) when done, or occasionally as you are making your changes.</p>
+        <p class="ol1" MadCap:autonum="9.">When done, close all open files (<b>Window &gt;&#160;Close All Documents</b>)</p>
+        <p class="ol1" MadCap:autonum="10.">Repeat for the prefaces and appendixes:</p>
+        <p class="ol2Start" MadCap:autonum="a.">For prefaces, enter the following search string:</p><pre class="listLevel2">h1 class="chapter"</pre>
+        <p class="ol2" MadCap:autonum="b.">For apendixes, enter the following search string:</p><pre class="listLevel2" xml:space="preserve">h1 class="chapter"</pre>
+        <p class="ol1" MadCap:autonum="11.">Build the project and review the logs to ensure that you did not introduce any XHTML syntax errors:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Open your target(s) and click the Build button to build the target.</p>
+        <p class="ol2" MadCap:autonum="b.">When the build is complete, select it, and click on the Open Build Log button.</p>
+        <p class="ol2" MadCap:autonum="c.">Review the warnings to ensure you did not introduce any syntax errors. For example, the following line is missing the closing angle bracket for the &lt;h1 tag:</p><pre class="listLevel2" xml:space="preserve">&lt;h1 class="chapter"Creating Content&lt;/h1&gt;</pre>
+        <p class="listLevel2">This error generates the following warning message in the log:</p><pre class="listLevel2" xml:space="preserve">Failed to update: 'Creating' is an unexpected token. Expecting white space. Line 20, position 28.</pre>
+        <p class="ol1" MadCap:autonum="12.">Fix all of the reported errors. All of your headings should appear as illustrated in <MadCap:xref href="overview.htm#H1">"H1 Heading Changes"&#160;on page&#160;1</MadCap:xref>.</p>
+    </body>
+</html>

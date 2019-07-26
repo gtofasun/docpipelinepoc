@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Publish entire project to the web"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="C:\inetpub\wwwroot\template\2018\_newlook\Gemalto\html\side_nav"
+  Port=""
+  ViewUrl="http://172.20.17.251/Template/2018"
+  Type="file"
+  ChangedOnly="false"
+  UploadLogFile="false"
+  RemoveStale="false"></CatapultDestination>

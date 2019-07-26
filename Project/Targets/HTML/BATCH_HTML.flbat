@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultBatchTarget
+  Version="1"
+  Comment="New Batch Target">
+  <Targets>
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="HTML/FRAMES"
+      Type="HTML5"
+      Build="true"
+      Publish="true" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="HTML/SIDE_NAV"
+      Type="HTML5"
+      Build="true"
+      Publish="true" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="HTML/TOP_NAV"
+      Type="HTML5"
+      Build="true"
+      Publish="true" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/PDF_Out"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Release Note"
+      Type="PDF"
+      Build="false"
+      Publish="false" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Technical Note"
+      Type="PDF"
+      Build="false"
+      Publish="false" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Upgrade Guide"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/User Guide"
+      Type="PDF"
+      Build="false"
+      Publish="false" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Watermark/Release Note_Conf"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Watermark/Release_Note_Draft"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Watermark/Technical_Note_Conf"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Watermark/Technical_Note_Draft"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Watermark/User_Guide_Conf"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Watermark/User_Guide_Draft"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Word_Out"
+      Type="Word" />
+  </Targets>
+</CatapultBatchTarget>
