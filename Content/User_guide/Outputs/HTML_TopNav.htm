@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data_mc_search_type="Stem" data_mc_help_system_file_name="index.xml" data_mc_path_to_help_system="../../../" data_mc_target_type="WebHelp2" data_mc_runtime_file_type="Topic" data_mc_preload_images="false" data_mc_in_preview_mode="false" data_mc_medium="non-print" data_mc_toc_path="BookTemplate|Generating outputs" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/List1.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta charset="utf-8" /><title></title>
+        <link href="../../Resources/TableStyles/List1.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Breadcrumbs.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/plugins.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/MadCapAll.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script></head>
+    <body>
+        <h2><a name="The"></a>HTML Top-Navigation Outputs</h2>
+        <p>This section describes the HTML top-navigation outputs and how to use them in your projects. It contains the following topics:</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">
+            <MadCap:xref href="#Overvew">Overvew</MadCap:xref>
+        </p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">
+            <MadCap:xref href="#Configur">Configuring the Top-Navigation Outputs</MadCap:xref>
+        </p>
+        <h3><a name="Overvew"></a>Overvew</h3>
+        <p>HTML Top-Navigation Outputs use the HTML_FRAMELESS skin. This skin displays the TOC for the target at the top of the window. Because in does not use frames, which can trigger security warnings in vulnerability scans, this skin is well suited to on-product documentation.  The  HTML_FRAMELESS skin provides a more modern look, although navigation can be difficult if your TOC contains more than two levels, or multiple topics. By default, the HTML_FRAMELESS skin includes the Breadcrumbs proxy. For improved navigation, you can use different master pagesto add the Topic Toolbar and/or Menu proxies to your outputs, as described and illustrated below.</p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;"> If you use the Topic Toolbar or Menu proxies, you must use the HOME master page for your home page(s) that include the p.productLine and p.title styles. See <MadCap:xref href="#Configur">Configuring the Top-Navigation Outputs</MadCap:xref> for details.</p>
+        <h4>Proxies</h4>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Breadcrumbs</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Adds breadcrumbs links above the content.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Topic Toolbar</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Adds buttons for print, remove highlighting, previous topic, and next topic to the top and bottom of each page. Other buttons are also available. You can edit the proxy to customize which buttons are included.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">Menu </td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">Adds a context-sensitive topic menu to the left of the content.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Master Pages</h4>
+        <p>The master pages you can use with the HTML_FRAMELESS skin are described below:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Page-Head-Header1">
+                    <th class="TableStyle-Page-HeadE-Column1-Header1">Master page</th>
+                    <th class="TableStyle-Page-HeadD-Column1-Header1">Proxies included</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">FRAMELESS</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>Breadcrumbs</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1">FRAMELESS_TOOLBAR</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>Breadcrumbs, Topic toolbar</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1">FRAMELESS_MENU</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                        <p>Breadcrumbs, Topic toolbar, Menu</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Output Examples</h4>
+        <p>The following figures illustrate the top-navigation outputs with different master pages.</p>
+        <p class="figureCaption" MadCap:autonum="Figure 1: "><a name="The3"></a>The HTML_FRAMELESS skin with the FRAMELESS master page</p>
+        <p>
+            <img src="../../Resources/Images/template_ug/html5_frameless.png" />
+        </p>
+        <p class="figureCaption" MadCap:autonum="Figure 2: "><a name="The4"></a>The HTML_FRAMELESS skin with  the FRAMELESS_TOOLBAR master page</p>
+        <p>
+            <img src="../../Resources/Images/template_ug/html5_frameless_nav.png" />
+        </p>
+        <p class="figureCaption" MadCap:autonum="Figure 3: "><a name="The5"></a>The HTML_FRAMELESS skin with the FRAMELESS_MENU master page</p>
+        <p>
+            <img src="../../Resources/Images/template_ug/html5_frameless_nav_topic_menu.png" />
+        </p>
+        <h4>Building the Example Frameless HTML Outputs Examples</h4>
+        <p>You can build Framelesss HTML output by building the targets in the <b>Project/Targets/HTML_FRAMELESSS</b> folder, as follows:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">XHTML_FRAMELESS_SINGLE_DOC</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Builds the output described in <MadCap:xref href="#The3">The HTML_FRAMELESS skin with the FRAMELESS master page</MadCap:xref></td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">XHTML_FRAMELESS_MULTI_DOCS_TOOLBAR</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Builds the output described in <MadCap:xref href="#The4">The HTML_FRAMELESS skin with  the FRAMELESS_TOOLBAR master page</MadCap:xref></td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">XHTML_FRAMELESS_MULTI_DOCS_MENU</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">Builds the output described in <MadCap:xref href="#The5">The HTML_FRAMELESS skin with the FRAMELESS_MENU master page</MadCap:xref></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The targets will also tell you which TOC is used to build the output. See <MadCap:xref href="Target.htm">Configuring Your Output Targets</MadCap:xref> and <MadCap:xref href="TOC.htm">TOCs: Defining the Output Contents, Structure, and Layout</MadCap:xref> for more information.</p>
+        <h3><a name="Configur"></a>Configuring the Top-Navigation Outputs</h3>
+        <p>The top-navigation outputs use the proxies described below. To configure your outputs to use the proxies, you must specify the master page and skin to use in your targets and, for the Menu proxy, specify the TOC to use to generate the context-sensitive menu. You also need to set the master page to HOME for your home page topic. See the procedures below for step-by-step instructions.</p>
+        <h4>The Breadcrumbs Proxy</h4>
+        <p>The Breadcrumbs proxy is included in all the top-navigation master pages. It does not require any configuration.</p>
+        <h4>The Topic Toolbar Proxy</h4>
+        <p>The Topic Toolbar proxy is included in the FRAMELESS_TOOLBAR and FRAMELESS_MENU master pages. It is formatted using the FRAMELESS_TOOLBAR skin component (Project/Skins/FRAMELESS_TOOLBAR.flskn). This skin component controls the buttons that are displayed, and the toolbar styles and text. There is also a provision for adding custom Javascript. Please contact the template administrator before editing the skin component, or to provide suggestions for enhancements. </p>
+        <p>The proxy properties define the skin component used by the proxy. To view the proxy properties, open the FRAMELESS_TOOLBAR or FRAMELESS_MENU master pages, right-click on the <b>topic toolbar proxy</b> and select <b>Properties</b>. You should not need to edit the proxy properties.</p>
+        <h4>The Menu Proxy</h4>
+        <p>The Menu proxy is included in the FRAMELESS_MENU master page only. It is formatted using the FRAMELESS_MENU skin component (Project/Skins/FRAMELESS_MENU.flskn). This skin component controls the look of the menu, and is part of the template design. Do not edit this skin component. </p>
+        <p>The proxy properties define the TOC used to generate the context-sensitive menu, and some other properties set to their suggested default values, as shown below. To view the proxy properties, open the FRAMELESS_MENU master page, right-click on the <b>topic toolbar proxy</b> and select <b>Properties</b>. </p>
+        <p>You need to edit the proxy properties to specify the TOC you want to use. This is the TOC for your HTML output. See <MadCap:xref href="TOC.htm#HTML">HTML TOCs</MadCap:xref> for more information.</p>
+        <h4>Configuring your outputs to use the HTML_FRAMELESS skin with the FRAMELESS master page</h4>
+        <p>This configuration includes the Breadcrumbs proxy only. You need to configure your target.</p>
+        <h5>To configure your outputs to use the HTML_FRAMELESS skin with the FRAMELESS master page</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Configure your target as described in <MadCap:xref href="Target.htm#Creating3">Creating the HTML Target</MadCap:xref>, ensuring that the following options are set:</p>
+        <table style="width: 97%;mc-table-style: url('../../Resources/TableStyles/List1.css');" class="TableStyle-List1" cellspacing="0">
+            <col class="TableStyle-List1-Column-Column1" />
+            <col class="TableStyle-List1-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1" style="font-weight: bold;">Skin tab</td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">General &gt; HTML_FRAMELESS</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyB-Column1-Body1" style="font-weight: bold;">Advanced tab</td>
+                    <td class="TableStyle-List1-BodyA-Column1-Body1">Master Page &gt; FRAMELESS</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4><a name="Configur2"></a>Configuring your outputs to use the HTML_FRAMELESS skin with the FRAMELESS_TOOLBAR master page</h4>
+        <p>This configuration includes the Breadcrumbs and Topic Toolbar proxies. You need to configure your target and home page.</p>
+        <h5>To configure your outputs to use the HTML_FRAMELESS skin with the FRAMELESS_TOOLBAR master page</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Configure your target as described in <MadCap:xref href="Target.htm#Creating3">Creating the HTML Target</MadCap:xref>, ensuring that the following options are set:</p>
+        <table style="width: 97%;mc-table-style: url('../../Resources/TableStyles/List1.css');" class="TableStyle-List1" cellspacing="0">
+            <col class="TableStyle-List1-Column-Column1" />
+            <col class="TableStyle-List1-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1" style="font-weight: bold;">Skin tab</td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">General &gt; HTML_FRAMELESS</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyB-Column1-Body1" style="font-weight: bold;">Advanced tab</td>
+                    <td class="TableStyle-List1-BodyA-Column1-Body1">Master Page &gt; FRAMELESS_TOOLBAR</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ol1" MadCap:autonum="2.">Edit the properties for your home page (that uses the p.productLine and p.title styles) to use the HOME master page:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Navigate to your home page topic file.</p>
+        <p class="ol2" MadCap:autonum="b.">Right-click on the file and select <b>Properties</b>.</p>
+        <p class="ol2" MadCap:autonum="c.">Set <b>Topic Properties</b> &gt; <b>Masterpage:</b> to HOME </p>
+        <h4><a name="Configur3"></a>Configuring your outputs to use the HTML_FRAMELESS skin with the FRAMELESS_MENU master page</h4>
+        <p>This configuration includes the Breadcrumbs, Topic Toolbar, and Menu proxies. You need  to configure your target, home page, and Menu proxy properties.</p>
+        <h5>To configure your outputs to use the HTML_FRAMELESS skin with the FRAMELESS_MENU master page</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Configure your target as described in <MadCap:xref href="Target.htm#Creating3">Creating the HTML Target</MadCap:xref>, ensuring that the following options are set:</p>
+        <table style="width: 97%;mc-table-style: url('../../Resources/TableStyles/List1.css');" class="TableStyle-List1" cellspacing="0">
+            <col class="TableStyle-List1-Column-Column1" />
+            <col class="TableStyle-List1-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1" style="font-weight: bold;">Skin tab</td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">General &gt; HTML_FRAMELESS</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyB-Column1-Body1" style="font-weight: bold;">Advanced tab</td>
+                    <td class="TableStyle-List1-BodyA-Column1-Body1">Master Page &gt; FRAMELESS_MENU</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ol1" MadCap:autonum="2.">Edit the Menu proxy properties  to specify the TOC to use for the contest-sensitive menu:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Navigate to Contents/Resources/MasterPages.</p>
+        <p class="ol2" MadCap:autonum="b.">Open the FRAMELESS_MENU master page, right-click on the <b>Menu Proxy</b> and select <b>Properties</b>. The following dialog is displayed.</p>
+        <p class="listLevel2">
+            <img src="../../Resources/Images/template_ug/menu_proxy.png" />
+        </p>
+        <p class="ol2" MadCap:autonum="c.">Specify the TOC to use. This is the TOC for your HTML output. See <MadCap:xref href="TOC.htm#HTML">HTML TOCs</MadCap:xref> for more information.</p>
+        <p class="ol2" MadCap:autonum="d.">Edit the other Menu Content properties if required. It is recommended that you use the default values shown above. Do not change the skin file.</p>
+        <p class="ol1" MadCap:autonum="3.">Edit the properties for your home page (that uses the p.productLine and p.title styles) to use the HOME master page:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Navigate to your home page topic file.</p>
+        <p class="ol2" MadCap:autonum="b.">Right-click on the file and select <b>Properties</b>.</p>
+        <p class="ol2" MadCap:autonum="c.">Set <b>Topic Properties</b> &gt; <b>Masterpage:</b> to HOME </p>
+    </body>
+</html>

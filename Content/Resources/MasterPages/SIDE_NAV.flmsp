@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+    </head>
+    <body>
+        <!-- Uncomment the following line to enable syntax highlighting -->
+        <!-- <script type="text/javascript" src="../PlugIns/SyntaxHilite/Prism/prism.js"></script> -->
+        <div class="content">
+            <div id="contentBody">
+                <div class="ContentRowSideNav" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                    <div>
+                        <MadCap:breadcrumbsProxy />
+                        <MadCap:bodyProxy />
+                    </div>
+                    <div>
+                        <MadCap:topicToolbarProxy style="margin-top: 0px; mc-topic-toolbar-items: ;text-align: right;" data-mc-skin="/Project/Skins/Components/TOOLBAR.flskn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><MadCap:variable name="Default.Product" />&#160;<MadCap:variable name="Default.Release" />&#160;<MadCap:variable name="Default.ProjectTitle" /><br /><MadCap:variable name="Default.PartNumber" />&#160;<MadCap:variable name="Default.Revision" />&#160;&#160;<MadCap:variable name="Default.DateLong" />&#160;&#160;<MadCap:variable name="Default.Copyright" />&#160;<MadCap:variable name="Default.CompanyNameLong" />&#160;All rights reserved. </p>
+    </body>
+</html>

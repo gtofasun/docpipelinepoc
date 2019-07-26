@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data_mc_search_type="Stem" data_mc_help_system_file_name="index.xml" data_mc_path_to_help_system="../../../" data_mc_target_type="WebHelp2" data_mc_runtime_file_type="Topic" data_mc_preload_images="false" data_mc_in_preview_mode="false" data_mc_medium="non-print" data_mc_toc_path="BookTemplate|Generating outputs" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta charset="utf-8" /><title></title>
+        <link href="../../Resources/TableStyles/List1.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Breadcrumbs.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/plugins.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/MadCapAll.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script></head>
+    <body>
+        <h2><a name="PDF"></a>PDF Outputs</h2>
+        <p>The format of your PDF outputs is defined by the page layouts you apply to the folders and topics in the TOC. You can use the page layouts for books to create a book with a cover, frontmatter, table of contents, chapters, etc., or you can use the Notes page layout to create a technical note consisting of one or more topics. You can use different page layouts to apply Draft or Confidential watermarks to your PDF outputs. See <MadCap:xref href="TOC.htm">TOCs: Defining the Output Contents, Structure, and Layout</MadCap:xref> for information about applying page layouts to your TOCs.</p>
+        <h4>PDF Books</h4>
+        <p>To create a PDF book for your content, you need to create the content elements required for a book, and structure your TOC as described in <MadCap:xref href="TOC.htm#PDF">PDF TOCs</MadCap:xref>.</p>
+        <h4>PDF Technical Notes</h4>
+        <p>To create a PDF&#160;technical note for your content, you need to apply the First page of the Notes page layout to the first topic in the technical note. The fist topic in the technical note must use the format outlined in the following template topic files:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Release notes and generic notes</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Content/note/noteTemplate.htm</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">Technical notes (see Note below)</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">Content/technote/TechnoteTemplate.htm</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>These template files contain the appropriate paragraphs for the note headings and also include proxies for generating the table of contents for the note. If the note is a single topic file, use the mini-TOC proxy. If the note contains multiple topic files, use the output TOC proxy.</p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">Although we provide a release note template and a technical note template, the only difference between the two is the use of the p.subjectNotes style to provide a sub-title for the technical note. In practice, this format is seldom used and has been deprecated. It is recommended that you use the format defined by <b>Content/note/noteTemplate.htm</b> and the Notes page layout.</p>
+        <h4>Building the Example PDFs</h4>
+        <p>You can build any of the example PDFs by building the targets in the <b>Project/Targets/PDF</b> folder. The targets will also tell you which TOC is used to build the file. See <MadCap:xref href="Target.htm">Configuring Your Output Targets</MadCap:xref> and <MadCap:xref href="TOC.htm">TOCs: Defining the Output Contents, Structure, and Layout</MadCap:xref> for more information.</p>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="BookTemplate|Generating outputs" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title></title>
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Breadcrumbs.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>Importing MS Word Documents</h2>
+        <p>You use the Flare Microsoft MS Word import wizard to import Word documents into an existing Flare project based on this template. You import into an existing project because the import process maps your Word styles to the styles defined by the project's  CSS. The Flare project you import to must therefore contain the Gemalto CSS (in <b>Content/Resources/Stylesheets/Gemalto_Template.css</b>). Importing MS Word documents into Flare is a multi-step process, described in detail in the following sections:</p>
+        <p class="ol1Start" MadCap:autonum="1.">
+            <MadCap:xref href="#Preparin">Preparing Your MS Word Documents for Import</MadCap:xref>
+        </p>
+        <p class="ol1" MadCap:autonum="2.">
+            <MadCap:xref href="#Running">Using the MS Word Import Wizard</MadCap:xref>
+        </p>
+        <p class="ol1" MadCap:autonum="3.">
+            <MadCap:xref href="#Post-Imp">Post-Import Cleanup and Configuration in Flare</MadCap:xref>
+        </p>
+        <h3><a name="Preparin"></a>Preparing Your MS Word Documents for Import</h3>
+        <p>To ensure a clean import with a minimal amount of cleanup required once the content is in Flare, you must prepare your document for import. This involves restructuring the content so that it works as individual topics, removing boilerplate and generated content, such as the cover, frontmatter, table of contents, and preface, and removing autonumbering and bullets from lists so that they are imported as paragraphs, and not list items.</p>
+        <h5>To prepare your MS Word documents for import</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Plan how you want to import your content, as described in <MadCap:xref href="Import.htm#top">Importing Content</MadCap:xref></p>
+        <p class="ol1" MadCap:autonum="2.">Restructure your content into standalone topics, as described in <MadCap:xref href="Import.htm#Topic-Ba">Topic-Based Authoring</MadCap:xref>.</p>
+        <p class="ol1" MadCap:autonum="3.">Remove the following sections from the front of document. You will replace this content with standard boilerplate or generated content once the content is imported into Flare:</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">the cover</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">the frontmatter (document information, revision history, trademarks, disclaimer)</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">the table of contents</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">the preface (Release Notes, Audience, Document Conventions, Support Contacts)</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">the index</p>
+        <p class="ol1" MadCap:autonum="4.">Remove the bullets from the unordered list paragraph styles. This allows you to import the list items as paragraphs rather than lists. Otherwise you will need to unbind the lists once in Flare, a very tedious process.</p>
+        <p class="ol2Start" MadCap:autonum="a.">Open the <b>Styles</b> window.</p>
+        <p class="ol2" MadCap:autonum="b.">Select a bulleted list style (these are p_ul1, p_ul2, and p_ul3 if you are migrating from the Gemalto Word template).</p>
+        <p class="ol2" MadCap:autonum="c.">Click on the down arrow and select <b>Modify</b>. The <b>Modify Style</b> dialog is displayed.</p>
+        <p class="ol2" MadCap:autonum="d.">Click on the <b>Format</b> button and select <b>Numbering</b>. The <b>Numbering and Bullets</b> dialog is displayed. </p>
+        <p class="ol2" MadCap:autonum="e.">Click on the <b>Bullets</b> tab and click on <b>None</b> in the Bullet Library.</p>
+        <p class="ol2" MadCap:autonum="f.">Click <b>OK</b> to save your changes.</p>
+        <p class="ol2" MadCap:autonum="g.">Repeat for all used bulleted list styles.</p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">This may not work for all of your lists. It is recommended that you go through the document and ensure that you remove the bullets from all unordered lists. You can do this by selecting the lists items and selecting <b>None</b> from the bulleted list icon drop-down in the <b>Paragraph</b> formatting area.</p>
+        <p class="ol1" MadCap:autonum="5.">Remove the autonumbers from the ordered list paragraph styles. This allows you to import the list items as paragraphs rather than lists. Otherwise you will need to unbind the lists once in Flare, a very tedious process.</p>
+        <p class="ol2Start" MadCap:autonum="a.">Open the <b>Styles</b> window.</p>
+        <p class="ol2" MadCap:autonum="b.">Select a numbered list style (these are p_ol1, p_ol2, and p_ol3 if you are migrating from the Gemalto Word template, but there are likely more).</p>
+        <p class="ol2" MadCap:autonum="c.">Click on the down arrow and select <b>Modify</b>. The <b>Modify Style</b> dialog is displayed.</p>
+        <p class="ol2" MadCap:autonum="d.">Click on the <b>Format</b> button and select <b>Numbering</b>. The <b>Numbering and Bullets</b> dialog is displayed. </p>
+        <p class="ol2" MadCap:autonum="e.">Click on the Bullets tab and click on <b>None</b> in the Bullet Library.</p>
+        <p class="ol2" MadCap:autonum="f.">Click <b>OK</b> to save your changes.</p>
+        <p class="ol2" MadCap:autonum="g.">Repeat for all used numbered list styles.</p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">This may not work for all of your lists. It is recommended that you go through the document and ensure that you remove the autonumbers from all ordered lists. You can do this by selecting the lists items and selecting <b>None</b> from the numbered list icon drop-down in the <b>Paragraph</b> formatting area.</p>
+        <h3><a name="Running"></a>Using the MS Word Import Wizard</h3>
+        <p>The MS Word Import wizard walks you through the import process. You can run the wizard as many times as required to achieve the desired results in Flare.</p>
+        <h5>To import a Word document into an existing Flare project</h5>
+        <p class="ol1Start" MadCap:autonum="1.">If you are creating a new project (that is, you have not imported any documents yet), take a copy of the <MadCap:variable name="Default.CompanyName" /> Flare Template and open it in Flare. Remove any extraneous content if desired. At a minimum you need the newBook folder, the Resources folder and the README file. You probably want to keep the Home file as a template. You can also remove any unused TOC, target, and destination files from the Project folder. You can also rename the project file  (Gemalto_Flare_Template.flrprj) as well (you'll have to close Flare to do this). </p>
+        <p class="ol1" MadCap:autonum="2.">Select <b>Project</b> &gt; <b>Import</b> &gt;&#160;<b>MS Word Documents...</b>. The wizard starts. </p>
+        <p class="ol1" MadCap:autonum="3.">On the <b>Import Options</b> screen, select <b>Import into this project</b> and click <b>Next</b>.</p>
+        <p class="ol1" MadCap:autonum="4.">On the <b>Select MS Word Documents to import</b> screen, do the following:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Uncheck the <b>Link Generated Files to Source Files</b> checkbox. You want to bring the files in unlinked.</p>
+        <p class="ol2" MadCap:autonum="b."> Click on the <b>+</b> to select the files you want to import. You can import a single file or multiple files. If you select multiple files, they will all use the same import mapping rules you define in a subsequent step.</p>
+        <p class="ol2" MadCap:autonum="c.">Click Next. Flare will begin scanning the selected document(s) to determine a list of Word styles that are used in the document. Review the list. If there are styles listed that you do not know how to map to a Flare style, cancel, check the Styles defined in your Word document, and retag as required.</p>
+        <p class="ol1" MadCap:autonum="5.">On the <b>'New Topic' Styles</b> screen, specify the styles to want to use to define the start of a new topic by moving them from the <b>Used Word Styles</b> column to the <b>'New Topic' Styles</b> column. To move a style to another column, select it and click the arrow button. You would typically start new topics for Heading1 (including any appendix styles) and Heading2 topics, but may include additional styles, depending on how you tagged the source document. Click <b>Next</b>. </p>
+        <p class="ol1" MadCap:autonum="6.">On the <b>Options</b> screen, accept the defaults, and click <b>Next</b>.</p>
+        <p class="ol1" MadCap:autonum="7.">On the <b>Stylesheet</b> screen, do the following:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Click on the <b>Stylesheet</b> button, and select the CSS for the project (&lt;current project&gt;<b>/Content/Resources/Stylesheet/Gemalto_Template.css</b>).</p>
+        <p class="ol2" MadCap:autonum="b.">Select <b>Don't Preserve MS Word Styles</b>. </p>
+        <p class="caution" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;CAUTION!&lt;/b&gt; &#160;&#160;&lt;/span&gt;">Ensure that you do not bring forward any styles from the source Word document. That is, do not preserve Word styles, or convert inline formatting to CSS styles. If you do, subsequent updates to the template will overwrite these non-supported styles.</p>
+        <p class="ol1" MadCap:autonum="8.">On the <b>Paragraph Style Mapping</b> screen, specify how you want to map the MS Word paragraph styles in the source document to the paragraph styles defined in the Flare CSS. To map a style, select the Word style and the Flare style you want to map it to, and click <b>Map</b>. The column on the left is updated to indicate the Flare style that the Word style will be mapped to. Ensure that all of the Word styles are mapped to Flare styles and then click <b>Next</b> to proceed.</p>
+        <p class="ol1" MadCap:autonum="9.">On the <b>Character Style Mapping</b> screen, specify how you want to map the MS Word character styles in the source document to the character styles defined in the Flare CSS. To map a style, select the Word style and the Flare style you want to map it to, and click <b>Map</b>. The column on the left is updated to indicate the Flare style that the Word style will be mapped to. Any unmapped styles will be ignored on import, such that the text associated with the unmapped character style is imported without formatting. Click <b>Finish </b> to begin the import.</p>
+        <p class="ol1" MadCap:autonum="10.">When the import is complete, the <b>Accept Imported Documents</b> dialog is displayed, listing all of the files that were generated during the import process. Generated files include topic files (<b>.htm</b>) and graphic files (<b>.png, .jpg, .svg</b>, etc). A default TOC (<b>.fltoc</b>), master page (<b>.flmsp</b>), and CSS (<b>.css</b>) are also generated. You may want to keep the TOC. You can discard the master page (<b>.flmsp</b>), and CSS (<b>.css</b>) since you will be using the CSS and master page defined in the template.</p>
+        <p class="listLevel1">The dialog allows you to click on a generated file in the <b>File</b> list to display a preview of the file in the <b>Imported</b> window if the dialog. If you are happy, or just want to look at the results in more detail in Flare, click <b>Accept</b> to import the converted content into your Flare project. The following folders/files are added to the project:</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">A folder with the same name as the imported document, that contains all of the topics created during the import, is added to the <b>Content</b> folder. The topics are added in a flat file structure. There is no hierarcy based on chapters or any other structural elements of the source document.</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">A folder with the same name as the imported document, that contains all of the topics created during the import, is added to the <b>Content/Resources/Images</b> folder. The topics are added in a flat file structure. There is no hierarchy based on chapters or any other structural elements of the source document.</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">A master page with the same name as the imported document is added to the <b>Content/Resources/Images</b> folder. You can discard this file.</p>
+        <p class="ul2" MadCap:autonum="&lt;b&gt;•&lt;/b&gt;">A TOC with the same name as the imported document is added to the <b>Project/TOCs</b> folder. It retains the structure of the source document. </p>
+        <p class="ol1" MadCap:autonum="11.">Repeat the import process as many times as required to achieve the desired results. </p>
+        <h3><a name="Post-Imp"></a>Post-Import Cleanup and Configuration in Flare</h3>
+        <p>Once you are satisfied with the imported content, you can begin reassembling the document in Flare and cleaning up the content to remove any extraneous metadata, resize graphics, and otherwise fix things so that the content can be used to generate HTML and PDF outputs. You must do your cleanup and configuration in Flare.</p>
+        <h5>To cleanup the imported content and create and configure your TOCs and targets</h5>
+        <p class="ol1Start" MadCap:autonum="1.">Organize the content into meaningful folders (typically by chapter). </p>
+        <p class="ol1" MadCap:autonum="2.">Rename the files and directories so that they use short file names and no spaces. For example, if you have a topic named <b>Backup and Restore HSMs and Partitions.htm</b>, rename it to something short and descriptive, like <b>backup.htm</b>. </p>
+        <p class="caution" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;CAUTION!&lt;/b&gt; &#160;&#160;&lt;/span&gt;">The path to any file in your project cannot exceed 256 characters. If you exceed this limit, your builds will fail. There are also path length limits when creating ISOs and other archive files, so be careful. Best practice is to keep things short. Short file and folder names, that do not contain spaces, makes forwarding URLs to your topics easier too.</p>
+        <p class="ol1" MadCap:autonum="3.">Add the boilerplate content from the template to the folder containing the content for the imported document:</p>
+        <p class="ol2Start" MadCap:autonum="a.">Copy the <b>Preface</b> folder from the <b>newBook</b> folder to the folder containing the content for the imported document.</p>
+        <p class="ol2" MadCap:autonum="b.">Copy the <b>Contents.htm</b>, <b>Cover.htm</b>, and <b>FrontMatter.htm</b> files from the <b>newBook</b> folder to the folder containing the content for the imported document.</p>
+        <p class="ol1" MadCap:autonum="4.">Edit the <b>Preface/Preface.htm</b> file to add a cross-reference to the h1 topic for each chapter in the document.</p>
+        <p class="ol1" MadCap:autonum="5.">Edit the TOC for the imported document to add the boilerplate content. You can also restructure the TOC as desired. For example, you can remove any entries that point to a bookmark rather than a file so that your TOC links only to individual topics, not the subheadings they contain. If you do this, you can also remove the TOC bookmarks from the Flare content that were added as part of the import. See <MadCap:xref href="../Outputs/TOC.htm">TOCs: Defining the Output Contents, Structure, and Layout</MadCap:xref> for more information about structuring TOCs.</p>
+        <p class="ol1" MadCap:autonum="6.">Create targets for your desired outputs. See <MadCap:xref href="../Outputs/Target.htm">Configuring Your Output Targets</MadCap:xref> for more information.</p>
+    </body>
+</html>

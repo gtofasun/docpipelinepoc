@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/All_Docs_w_Home.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/Gemalto_Template.css"
+  MasterPage="/Content/Resources/MasterPages/Default.flmsp"
+  Medium="non-print"
+  ConditionTagExpression="include[Default.ScreenOnly]exclude[Default.Note or Default.PrintOnly]"
+  OutputFile="index.html"
+  Skin="/Project/Skins/FRAMES.flskn"
+  DefaultUrl="/Content/Home.htm">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/FRAMES.fldes" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="Default/ProjectTitle">Madcap Flare Templates</Variable>
+    <Variable
+      Name="Default/Release">2.0</Variable>
+    <Variable
+      Name="Default/Product">Gemalto Customer Documentation</Variable>
+    <Variable
+      Name="Default/Title">MADCAP FLARE TEMPLATES</Variable>
+    <Variable
+      Name="Default/Revision">Rev. A</Variable>
+  </Variables>
+</CatapultTarget>

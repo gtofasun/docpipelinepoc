@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="95" MadCap:lastWidth="686">
+    <head>
+    </head>
+    <body>
+        <MadCap:bodyProxy />
+		<p class="footer"><MadCap:variable name="Default.Product" />&#160;<MadCap:variable name="Default.Release" />&#160;<MadCap:variable name="Default.ProjectTitle" />
+	<br /><MadCap:variable name="Default.PartNumber" />&#160;<MadCap:variable name="Default.Revision" />&#160;&#160;<MadCap:variable name="Default.DateLong" />&#160;&#160;<MadCap:variable name="Default.Copyright" />&#160;<MadCap:variable name="Default.CompanyNameLong" />&#160;All rights reserved. </p>
+    </body>
+</html>

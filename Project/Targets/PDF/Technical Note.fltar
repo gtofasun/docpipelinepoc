@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/TechNote.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/TechNote.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/Gemalto_Template.css"
+  DisableAutoSync="true"
+  ConditionTagExpression="include[Default.PrintOnly] exclude[Default.Note or Default.ScreenOnly] ">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF_CONTENT.fldes" />
+    <Destination
+      Link="/Project/Destinations/PDF_WEB.fldes" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="Default/SubjectNotes">: &lt;SubjectNotes&gt;</Variable>
+    <Variable
+      Name="Default/Release">2.0</Variable>
+    <Variable
+      Name="Default/Revision">Rev. A</Variable>
+  </Variables>
+  <DocumentProperties
+    Title="Technical Note Template"
+    Author="Gemalto" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="Fit"
+    TitleBar="DocumentTitle" />
+</CatapultTarget>

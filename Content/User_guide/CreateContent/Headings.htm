@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data_mc_search_type="Stem" data_mc_help_system_file_name="index.xml" data_mc_path_to_help_system="../../../" data_mc_target_type="WebHelp2" data_mc_runtime_file_type="Topic" data_mc_preload_images="false" data_mc_in_preview_mode="false" data_mc_medium="non-print" data_mc_toc_path="BookTemplate|Creating Content" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta charset="utf-8" /><title></title>
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Breadcrumbs.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/plugins.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/MadCapAll.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script></head>
+    <body>
+        <h2><a name="Headers"></a>      Headings</h2>
+        <p>Headings are used to begin chapters and topics and to break topics into logical sections. This template supports 5 levels of headings, which are described in detail in the following sections.&lt;h1&gt; is a chapter heading. &lt;h2&gt; is a major heading, and corresponds to a topic. All topics, with the exception of the chapter heading, begin with an &lt;h2&gt; heading. The heading for this section is an &lt;h2&gt;. A topic contains all of the information from the start of one &lt;h2&gt; until the start of the next &lt;h2&gt;. Except for their .ntoc classes, h1, h2, and h3 headings appear in the TOC - h4 and h5 headings do not.</p>
+        <p>Refer to <MadCap:xref href="../Styles.htm">List of Styles</MadCap:xref> for information detailing how heading styles are formatted in the print and online outputs.</p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">Do not use punctuation in headings, such as a colon in an h5 used to introduce a procedure. This is to avoid having the punctuation appear in any cross-references to the heading. Besides that, it is just bad form.</p>
+        <h3>Level-1 Headings</h3>
+        <p>Level-1 headings begin with the h1 tag. They are used to head each chapter and major section of a book. The level-1 headings are also used in the running header in the print outputs. </p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">In the previous version of this template, you were required to insert a hard return when using the h1.chapter, h1.preface, and h1.appendix styles to force the autonumber to appear above the heading . This restriction has been removed in this release, with the autonumber appearing beside the heading. As a result you must remove any existing manual breaks from these heading styles. See the <i>Template Upgrade Guide</i> for details.</p>
+        <p>There are several h1 classes, as follows:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">h1</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>Typically not used in books, but can be used to break up technical notes or release notes into major sections. In print outputs, automatically inserts a page break.</p>
+                        <p>The ability to use a generic h1 is new in this release.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;"><a name="kanchor1"></a>
+      h1.appendix</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>Used for appendices. For print outputs, adds the autonumber A:APPENDIX {A+}:. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">
+                        h1.chapter
+                    </td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>Used for chapters. For print outputs, adds the autonumber CHAPTER {chapnum}:. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">h1.contents</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>Used for the table of contents in the print output. Adds the autonumber CONTENTS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;"><a name="kanchor2"></a>
+      h1.index</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Used for the index in the print output. Adds the autonumber INDEX.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">h1.preface</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                        <p>Use this class for the preface. For print outputs, adds the autonumber PREFACE:. </p>
+                        <p>Recommended preface heading is "About the &lt;title&gt;".</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Level-2 Headings</h3>
+        <p>Level-2 headings begin with the h2 tag. They are used to head each topic (<b>.htm</b> file) in a chapter. There are several h2 classes, as follows:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">h2</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Use for topic headings that you want to include in the TOC and that do not force a page break in the printed output.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">
+                        h2.ntoc
+                    </td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>Use for topic headings that you do not want to include in the printed TOC.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">
+                        h2.pageBreak
+                    </td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">Use for topic headings that force a page break in the printed output. Typically used for individual commands in a command reference manual.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Level-3 Headings</h3>
+        <p>Level-3 headings begin with the h3 tag. They are used for subtopics within a topic (<b>.htm</b> file). Avoid using an h3 as a heading for a topic - they are typically embedded within an h2 topic. If you have h3 topics, that is typically an indication that you have too many topics and should consider merging the h3 topics into an h2 topic. There are two h3 classes, as follows:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">h3</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Use for h3 headings that you want to include in the TOC.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">h3.ntoc</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">Use for h3 headings that you do not want to appear in the TOC.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Level-4 Headings</h3>
+        <p>Level-4 headings use the h4 tag. They are used for subsections of an h3 subtopic (<b>.htm</b> file) and do not appear in the TOC. Never use an h4 as a heading for a topic file.</p>
+        <h3>Level 5 Headings</h3>
+        <p>Level-5 headings use the h5&#160;tag. They are used for procedure headings and do not appear in the TOC. Never use an h5 as a heading for a topic. Procedure headings always begin with the phrase "To", for example:</p>
+        <h5>To illustrate how level-5 headings are used to introduce a procedure</h5>
+        <p class="ol1Start" data_mc_autonum="1." MadCap:autonum="1.">The first step of the procedure.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="2.">The second step of the procedure.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="3.">The third, and final, step of the procedure.</p>
+        <h3>Generic Subclasses</h3>
+        <p>You can apply a generic class to any paragraph or heading style. For example, to insert a page break before a paragraph, select the paragraph and then use the Styles drop-down to apply the <b>.pagebreak</b> generic class.</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">.ntoc</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Use this class to exclude an h1, h2, or h3 from the table of contents.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">
+                        <p>.pagebreak</p>
+                    </td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                        <p>Use this class to insert a page break above the selected paragraph.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Inserting Headings Into a Topic</h3>
+        <p>A level-1 heading is added automatically when you use <b>newChapter.htm</b> or <b>newAppendix.htm</b> to create a new chapter or appendix. A level-2 heading is added automatically when you use <b>newTopic.htm</b> to add a topic to a chapter. You can use the styles window to add level-3 and level-4 headings to a topic. </p>
+        <h5>To insert an &lt;h3&gt; or &lt;h4&gt; heading</h5>
+        <p class="ol1Start" data_mc_autonum="1." MadCap:autonum="1.">Place the cursor where you want to insert the heading.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="2.">Select the <b>h3</b> or <b>h4</b> style from the <b>Styles</b> menu.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="3.">Type your heading.</p>
+    </body>
+</html>

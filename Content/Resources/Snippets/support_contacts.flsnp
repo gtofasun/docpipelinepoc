@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="513" MadCap:lastWidth="686">
+    <head>
+    </head>
+    <body>
+        <p>If you encounter a problem while installing, registering, or operating this product, please refer to the documentation before contacting support. If you cannot resolve the issue, contact your supplier or <a href="https://supportportal.gemalto.com/" target="_blank"><MadCap:variable name="Default.CompanyName" /> Customer Support</a>.</p>
+        <p><MadCap:variable name="Default.CompanyName" /> Customer Support operates 24 hours a day, 7 days a week. Your level of access to this service is governed by the support plan arrangements made between <MadCap:variable name="Default.CompanyName" /> and your organization. Please consult this support plan for further information about your entitlements, including the hours when telephone support is available to you.</p>
+        <h3>Customer  Support Portal</h3>
+        <p>The Customer Support Portal, at <a href="https://supportportal.gemalto.com/" target="_blank">https://supportportal.gemalto.com,</a> is where you can find solutions for most common problems. The Customer Support Portal is a comprehensive, fully searchable database of support resources, including software and firmware downloads, release notes listing known problems and workarounds, a knowledge base, FAQs, product documentation, technical notes, and more. You can also use the portal to create and manage support cases.</p>
+        <p colspan="2" class="note" MadCap:autonum="&lt;span style=&quot;color: #6c286b;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">You require an account to access the  Customer Support Portal.  To create a new account,  go to the portal and click on the <b>REGISTER</b> link.</p>
+        <h3>Telephone Support</h3>
+        <p>If you have an urgent problem, or cannot access the  Customer Support Portal, you can contact  <MadCap:variable name="Default.CompanyName" /> Customer Support by telephone at <a href="https://supportportal.gemalto.com/">+1 410-931-7520</a>. Additional local telephone support numbers are listed on the support portal.</p>
+        <h3>Email Support </h3>
+        <p>You can also contact technical support by email at <a href="mailto:technical.support@gemalto.com">technical.support@gemalto.com</a>.</p>
+    </body>
+</html>

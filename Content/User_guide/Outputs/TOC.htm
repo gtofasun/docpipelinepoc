@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data_mc_search_type="Stem" data_mc_help_system_file_name="index.xml" data_mc_path_to_help_system="../../../" data_mc_target_type="WebHelp2" data_mc_runtime_file_type="Topic" data_mc_preload_images="false" data_mc_in_preview_mode="false" data_mc_medium="non-print" data_mc_toc_path="BookTemplate|Generating outputs" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/List1.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta charset="utf-8" /><title></title>
+        <link href="../../Resources/TableStyles/List1.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Breadcrumbs.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/plugins.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/MadCapAll.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script></head>
+    <body>
+        <h2>TOCs: Defining the Output Contents, Structure, and Layout</h2>
+        <p>Flare TOCs are separate files that define the structure of your outputs. TOCs define which topics and folders from your Contents folder appear in the output, the order in which they appear and, for print outputs, page and chapter numbering and page layout attributes. The TOCs for a project are contained in the TOC folder in the Project Organizer. Flare provides a TOC editor for creating and editing your TOCs.</p>
+        <p>When you create an output target, for example a PDF book, you specify the TOC you want to use to create the target. Flare then assembles the output using the topics defined in the TOC and the attributes defined in the target (format, conditions, variables, etc). </p>
+        <p class="note" data_mc_autonum="&amp;lt;b&amp;gt;Note:&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">You can use conditional text to further filter the contents of the output by including or excluding conditionally tagged topics.</p>
+        <h4>PDF TOCs</h4>
+        <p>For PDF outputs, the TOC defines not only the order of the content, but also the page layouts applied to its folders and topics, and the document chapter and page numbering. You use TOCs, for example, to use either the note or book page layouts when creating a document. You can also apply page layouts that add a Draft or Confidential watermark to each page in your document.</p>
+        <h4>Re-using TOCs</h4>
+        <p>After you create a TOC, you can re-use it within another TOC within the project by dragging an existing TOC into a new TOC. This feature allows you to create a single TOC for a book and re-use that TOC&#160;within other TOCs created for different targets. For example, if you are creating a project with PDF and HTML&#160;outputs, you can create a TOC for each PDF target (book), and then re-use these TOCs to create an multi-book HTML&#160;TOC. To re-use a TOC, simply drag it from you Project/TOC folder into the TOC you are creating.</p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">Best practice is to maintain only a single TOC for a book and re-use to generate all of your outputs, taking advantage of the PrintOnly and ScreenOnly conditions, unless you are using the topic menu proxy, which loads re-used TOCs  as single topics (see <MadCap:xref href="#TOC_topic_menu">HTML TOC Structure for Frameless Outputs That Use the Topic Menu Proxy</MadCap:xref>).</p>
+        <h4><a name="Limitati"></a>Limitations When Re-using TOCs</h4>
+        <p>Although re-using TOCs is best practice for tri-pane outputs that use the HTML_FRAMES skin, there are some limitations which may make it impractical, as follows:</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">In the TOC file, you cannot  link an imported TOC&#160;to a topic. If you do, when you click on the imported TOC in the output,  only the link loads. It does not expand the imported TOC.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">If you are using the context-sensitive menu proxy with the HTML_FRAMELESS skin, imported TOCs are imported as a single object, which causes undesirable behavior. For example, if an imported TOC&#160;is the child of the selected topic, the entire imported TOC is loaded as a child, upsetting the structure of the TOC. </p>
+        <h3><a name="PDF"></a>PDF TOCs</h3>
+        <p>You need to create a PDF TOC for each book or note in your project. PDF outputs include the following extra files that are not part of the HTML outputs:</p>
+        <p class="ul1" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"> <b>Cover.htm</b> - the front cover for the PDF book</p>
+        <p class="ul1" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"> <b>Contents.htm</b> - the table of contents for the PDF book</p>
+        <p>PDF TOCs also define the following print-only attributes:</p>
+        <p class="ul1" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">page numbering. You must set the page numbering for the cover to page 1.</p>
+        <p class="ul1" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">chapter and appendix numbering. You must set the chapter numbering for the first chapter to 1 and the appendix numbering for the first appendix to A.</p>
+        <p class="ul1" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">page layouts. For a book, you must set the page layout and page/chapter breaks for the cover, document information (frontmatter), contents, index, and the first page of each chapter and appendix. For a note, you only need to set the first page of the document to use the Cover page of the Notes page layout.</p>
+        <p class="listLevel1" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;">The template includes page layouts that you can use to add a Draft or Confidential watermark to your documents. The watermark page layouts are in Content/Resources/PageLayouts/Watermk. You apply them using the Printed Output tab of the TOC Properties dialog for a topic, as detailed in the following procedures.</p>
+        <p class="note" data_mc_autonum="&amp;lt;b&amp;gt;•&amp;lt;/b&amp;gt;" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">You only need to apply page layouts where the layout changes. Pages following a layout change use the Normal page or the parent page layout.</p>
+        <h5>To create a PDF TOC for a book</h5>
+        <p class="ol1Start" data_mc_autonum="1." MadCap:autonum="1.">Right click on the TOC&#160;folder in the Project Organizer and select <b>Add Table of Contents</b>.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="2.">Give the TOC file a name.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="3.">Open the TOC.</p>
+        <p class="ol1" data_mc_autonum="4." MadCap:autonum="4.">Drag the entire contents of the book folder from the Content Explorer to the TOC editor.</p>
+        <p class="ol1" data_mc_autonum="5." MadCap:autonum="5.">Rearrange the contents into the order you want them to appear in the output. The TOC for this document is illustrated below:</p>
+        <p class="listLevel1">
+            <img src="../../Resources/Images/template_ug/toc_pdf.png" />
+        </p>
+        <p class="ol1" data_mc_autonum="6." MadCap:autonum="6.">Each chapter folder will initially have a flag beside it, indicating that it is unlinked. You must link each chapter folder to the h1.chapter topic within the folder (that is, the first page of the chapter). For example, in the figure above, the highlighted Contents folder is linked to CreateContent.htm.</p>
+        <p class="listLevel1">To link a folder:</p>
+        <p class="ol2Start" data_mc_autonum="a." MadCap:autonum="a.">Right click on the folder and select Link to topic.</p>
+        <p class="ol2" data_mc_autonum="b." MadCap:autonum="b.">Navigate to the chapter folder and select the h1 chapter topic.</p>
+        <p class="ol2" data_mc_autonum="c." MadCap:autonum="c.">Delete the h1 chapter topic from the TOC.</p>
+        <p class="ol1" data_mc_autonum="7." MadCap:autonum="7."><a name="Set"></a>Set up the document pagination and numbering for the following folders and topics. Right click on the folder/topic, select Properties, and use the Properties dialog to set the folder/topic properties as indicated below:</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/List1.css');width: 97%;" class="TableStyle-List1" cellspacing="0">
+            <col class="TableStyle-List1-Column-Column1" style="width: 224px;" />
+            <col class="TableStyle-List1-Column-Column1" style="width: 222px;" />
+            <col class="TableStyle-List1-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-List1-Head-Header1">
+                    <th class="TableStyle-List1-HeadE-Column1-Header1">Folder/topic</th>
+                    <th class="TableStyle-List1-HeadE-Column1-Header1">Printed Output</th>
+                    <th class="TableStyle-List1-HeadD-Column1-Header1">Auto-numbers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1">Cover</td>
+                    <td class="TableStyle-List1-BodyE-Column1-Body1">
+                        <p>Page number: Start at 1</p>
+                        <p>Break type: Chapter</p>
+                        <p>Page layout: Frontmatter.  For watermarked PDFs, use Watermk/Draft/Frontmatter or Watermk/Confid/Frontmatter</p>
+                        <p>Page type: Title</p>
+                        <p>Auto-end left: Disabled</p>
+                    </td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">Defaults</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1">Frontmatter (Document Information)</td>
+                    <td class="TableStyle-List1-BodyE-Column1-Body1">
+                        <p>Break type: Page</p>
+                        <p>Page layout: Frontmatter. For watermarked PDFs, use Watermk/Draft/Frontmatter or Watermk/Confid/Frontmatter</p>
+                        <p>Page type: Normal</p>
+                        <p>Auto-end left: Disabled</p>
+                    </td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">Defaults</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1">Contents</td>
+                    <td class="TableStyle-List1-BodyE-Column1-Body1">
+                        <p>Break type: Chapter</p>
+                        <p>Page layout: Chapters</p>
+                        <p>Page type: First</p>
+                        <p>Auto-end left: Disabled</p>
+                    </td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">Defaults</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyE-Column1-Body1">About (preface) folder</td>
+                    <td class="TableStyle-List1-BodyE-Column1-Body1">
+                        <p>Break type: Chapter</p>
+                        <p>Page layout: Chapters.  For watermarked PDFs, use Watermk/Draft/Chapters or Watermk/Confid/Chapters</p>
+                        <p>Page type: First</p>
+                        <p>Auto-end left: Disabled</p>
+                    </td>
+                    <td class="TableStyle-List1-BodyD-Column1-Body1">Defaults</td>
+                </tr>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyB-Column1-Body1">Chapter and appendix folders, Contents, Glossary, Index</td>
+                    <td class="TableStyle-List1-BodyB-Column1-Body1">
+                        <p>Break type: Chapters</p>
+                        <p>Page layout:  Chapters.  For watermarked PDFs, use Watermk/Draft/Chapters or Watermk/Confid/Chapters</p>
+                        <p>Page type: First</p>
+                        <p>Auto-end left: Disabled</p>
+                    </td>
+                    <td class="TableStyle-List1-BodyA-Column1-Body1">Reset to 1 for first chapter in book.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ol1" MadCap:autonum="8.">The PDF TOC contains links to the Cover and printed table of contents, which are not required when generating web output. If you are re-using the TOC for your web outputs, you need to make the Cover and Contents conditional, so that they are included in the print outputs only. In the example above, items conditioned PrintOnly are indicated by the green box beside the TOC entry.</p>
+        <h5>To create a PDF TOC for a note</h5>
+        <p class="ol1Start" data_mc_autonum="1." MadCap:autonum="1.">Right click on the TOC&#160;folder in the Project Organizer and select <b>Add Table of Contents</b>.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="2.">Give the TOC file a name.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="3.">Open the TOC.</p>
+        <p class="ol1" data_mc_autonum="4." MadCap:autonum="4.">Drag the entire contents of the note folder from the Content Explorer to the TOC editor.</p>
+        <p class="ol1" data_mc_autonum="5." MadCap:autonum="5.">If your note contains more than one topic, rearrange the contents into the order you want them to appear in the output.</p>
+        <p class="ol1" data_mc_autonum="7." MadCap:autonum="6."><a name="Set"></a>Set up the document pagination and numbering for the following folders and topics. Right click on the folder/topic, select Properties, and use the Properties dialog to set the folder/topic properties as indicated below:</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/List1.css');width: 97%;" class="TableStyle-List1" cellspacing="0">
+            <col class="TableStyle-List1-Column-Column1" style="width: 224px;">
+            </col>
+            <col class="TableStyle-List1-Column-Column1" style="width: 222px;">
+            </col>
+            <col class="TableStyle-List1-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-List1-Head-Header1">
+                    <th class="TableStyle-List1-HeadE-Column1-Header1">Folder/topic</th>
+                    <th class="TableStyle-List1-HeadE-Column1-Header1">Printed Output</th>
+                    <th class="TableStyle-List1-HeadD-Column1-Header1">Auto-numbers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-List1-Body-Body1">
+                    <td class="TableStyle-List1-BodyB-Column1-Body1">First topic</td>
+                    <td class="TableStyle-List1-BodyB-Column1-Body1">
+                        <p>Page number: Start at 1</p>
+                        <p>Break type: Page layout</p>
+                        <p>Page layout: Note.  For watermarked PDFs, use Watermk/Draft/Note or Watermk/Confid/Note</p>
+                        <p>Page type: First</p>
+                        <p>Auto-end left: Disabled</p>
+                    </td>
+                    <td class="TableStyle-List1-BodyA-Column1-Body1">Defaults</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="HTML"></a>HTML TOCs</h3>
+        <p>You can build your HTML TOCs from scratch, or by reusing PDF book TOCs, as described in <MadCap:xref href="#HTML_TOC">Creating HTML TOCs</MadCap:xref>. You can also include other file types in the TOC, such as PDF files and videos, simply by dragging them into the TOC from the Contents folder. How you build your HTML TOCs depends on the whether you are using the HTML_FRAMES or HTML_FRAMELESS skin.</p>
+        <p> If you are using the HTML_FRAMELESS skin with the FRAMELESS_MENU master page (that includes the FRAMELESS_MENU skin component)&#160;you cannot re-use TOCs due to the way the topic menu proxy behaves (see <MadCap:xref href="#TOC_topic_menu">HTML TOC Structure for Frameless Outputs That Use the Topic Menu Proxy</MadCap:xref>).</p>
+        <h4>HTML TOC Structure Differs for Frames Versus Frameless Outputs</h4>
+        <p>If you are using the frameless (top-navigation) skin, you'll need to structure your TOC a bit differently than you would for Frames output, since the TOC drives the top-navigation menus. Typically this means conditioning the preface for PrintOnly, while still making it available by setting <b>Preface/preface.htm</b> as your startup topic in the target. The following table shows frameless and frames TOCs for the same book. The frameless TOC also includes a link to the PDF version of the document. </p>
+        <p>The colors indicate conditions: green is PrintOnly (set to Exclude in your HTML targets), blue is ScreenOnly (set to Include in your HTML targets), Note that although excluded topics do not show up in the output table of contents (frames) or top-navigation menus (frameless), they are still included in the output contents, and therefore any cross-references or hyperlinks to the excluded topics work. This allows you to exclude the preface (About This Document), the Document Information and List of Styles appendix from the top-navigation menus, and link to them in alternate ways. In this case, About this Document (Preface/preface.html) is set as the Startup Topic in the target, and is displayed when the application launches, or when the user clicks on the <b>Home</b> breadcrumbs link. </p>
+        <p>The frameless TOC also includes an entry for the PDF version of the document, created by maintaining the PDF in the Contents/PDF folder and dragging that PDF into the TOC when you create the TOC. It is conditioned ScreeenOnly. </p>
+        <p class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">If you do not condition the PDF topic ScreenOnly, and then use the same TOC to create the PDF version of the document, you will end up with the old PDF appended to the new PDF that you just generated. If you don't notice, the file will keep growing each time you generate a new version.</p>
+        <h4><a name="TOC_topic_menu"></a>HTML TOC Structure for Frameless Outputs That Use the Topic Menu Proxy</h4>
+        <p>You can add a context-sensitive topic menu to  the HTML_FRAMELESS skin by formatting your topics with the FRAMELESS_MENU master page (that includes the FRAMELESS_MENU skin component)</p>
+        <h4>Examples</h4>
+        <p>Refer to the Flare Template project to see more example TOCs.</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Page-Head-Header1">
+                    <th class="TableStyle-Page-HeadE-Column1-Header1">Frames (tri-pane) TOC</th>
+                    <th class="TableStyle-Page-HeadD-Column1-Header1">Resulting output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1">
+                        <img src="../../Resources/Images/template_ug/toc_frames.png" />
+                    </td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                        <img src="../../Resources/Images/template_ug/toc_frames_output.png" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Page-Head-Header1">
+                    <th class="TableStyle-Page-HeadE-Column1-Header1">Frameless (top-naviagion) TOC</th>
+                    <th class="TableStyle-Page-HeadD-Column1-Header1">Resulting Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1">
+                        <img src="../../Resources/Images/template_ug/toc_frameless.png" />
+                    </td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                        <img src="../../Resources/Images/template_ug/toc_frameless_output.png" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4><a name="HTML_TOC"></a>Creating HTML TOCs</h4>
+        <p>You need to create a single TOC&#160;for all of the books in your project. There are two ways you can do this:</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">If the project is HTML only, see <MadCap:xref href="#TOC_scratch">To create an HTML TOC from scratch</MadCap:xref>.</p>
+        <p class="ul1" MadCap:autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;">If the project combines HTML and PDF into a single output, see <MadCap:xref href="#TOC_reuse">To create an HTML&#160;TOC by re-using the PDF book TOCs</MadCap:xref>.</p>
+        <h5><a name="TOC_scratch"></a>To create an HTML TOC from scratch</h5>
+        <p>Use this method if you are creating a new HTML-only TOC.</p>
+        <p class="ol1Start" data_mc_autonum="1." MadCap:autonum="1.">Right click on the TOC&#160;folder in the Project Organizer and select <b>Add Table of Contents</b>.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="2.">Give the TOC file a name.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="3.">Click Add to add the TOC to the TOC folder.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="4.">Open the TOC. It will have a couple of default topics. Delete them.</p>
+        <p class="ol1" data_mc_autonum="4." MadCap:autonum="5.">Drag the entire contents of the book folder from the Content Explorer to the TOC editor.</p>
+        <p class="ol1" data_mc_autonum="5." MadCap:autonum="6.">Rearrange the contents into the order you want them to appear in the output. The <b>Home</b> file should be first, followed by each individual book. Place technical notes and other content as desired.</p>
+        <p class="ol1" data_mc_autonum="7." MadCap:autonum="7.">Each chapter folder will initially have a flag beside it, indicating that it is unlinked. You must link each chapter folder to the h1 chapter topic within the folder (that is, the first page of the chapter). For example, in the figure above, the highlighted Contents folder is linked to <b>CreateContent.htm</b>.</p>
+        <p class="listLevel1">To link a folder:</p>
+        <p class="ol2Start" data_mc_autonum="a." MadCap:autonum="a.">Right click on the folder and select <b>Link to topic</b>.</p>
+        <p class="ol2" data_mc_autonum="b." MadCap:autonum="b.">Navigate to the chapter folder and select the h1.chapter topic.</p>
+        <p class="ol2" data_mc_autonum="c." MadCap:autonum="c.">Delete the h1.chapter topic from the TOC.</p>
+        <p class="ol1" data_mc_autonum="8." MadCap:autonum="8.">Each book folder will initially have a flag beside it, indicating that it is unlinked. You must link each book folder to the <b>preface.htm</b> file in the <b>Preface</b> folder for the document (the first page of the preface, that briefly describes the document and provides links to each chapter in the document).</p>
+        <h5 data_mc_autonum="8."><a name="TOC_reuse"></a>To create an HTML&#160;TOC by re-using the PDF book TOCs</h5>
+        <p data_mc_autonum="8.">Use this method if you are creating an HTML&#160;TOC that contains documents for which TOCs already exist. For example, if you are creating a TOC that contains multiple books for which individual TOCs already exist.</p>
+        <p data_mc_autonum="8." class="note" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">Do not use this method if you are using the HTML_FRAMELESS skin with the Menu proxy. See <MadCap:xref href="#Limitati">Limitations When Re-using TOCs</MadCap:xref>.</p>
+        <p class="ol1Start" data_mc_autonum="1." MadCap:autonum="1.">Right click on the TOC&#160;folder in the Project Organizer and select <b>Add Table of Contents</b>.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="2.">Give the TOC file a name.</p>
+        <p class="ol1" data_mc_autonum="2." MadCap:autonum="3.">Click Add to add the TOC to the TOC folder.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="4.">Open the TOC. It will have a couple of default topics. Delete them.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="5.">Drag the individual TOCs you want to re-use from the <b>Project/TOCs</b> folder to the TOC editor.</p>
+        <p class="ol1" data_mc_autonum="3." MadCap:autonum="6.">Rearrange the contents into the order you want them to appear in the output. The <b>Home</b> file should be first, followed by each individual book. Place technical notes and other content as desired.</p>
+        <p class="note" data_mc_autonum="3." MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;">Some topics in the TOC, such as the cover or the printed table of contents may be applicable to only one output. You can use conditional text to control which topic to include on the printed and online outputs when re-using TOCs.</p>
+    </body>
+</html>

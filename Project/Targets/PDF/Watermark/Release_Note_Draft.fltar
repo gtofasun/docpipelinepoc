@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/PDF_watermark/Relnote_Draft.fltoc"
+  ConditionTagExpression="include[Default.PrintOnly]exclude[Default.Note or Default.ScreenOnly]">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF_CONTENT_DRAFT.fldes" />
+    <Destination
+      Link="/Project/Destinations/PDF_WEB_DRAFT.fldes" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="Default/Title">Release Notes</Variable>
+    <Variable
+      Name="Default/Revision">Rev. A</Variable>
+    <Variable
+      Name="Default/Release">2.0</Variable>
+    <Variable
+      Name="Default/Product">Gemalto Customer Documentation</Variable>
+  </Variables>
+</CatapultTarget>

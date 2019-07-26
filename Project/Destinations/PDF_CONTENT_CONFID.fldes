@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Copy PDFs back into the project"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="C:\CustomerDoc\Templates\2018\_newlook_thales\Gemalto\Content\PDF\Watermk\Confid"
+  Port=""
+  ViewUrl="http://www.madcapsoftware.com/"
+  Type="file"
+  ChangedOnly="false"
+  RemoveStale="false"
+  UploadLogFile="false"></CatapultDestination>

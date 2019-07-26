@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data_mc_search_type="Stem" data_mc_help_system_file_name="index.xml" data_mc_path_to_help_system="../../../" data_mc_target_type="WebHelp2" data_mc_runtime_file_type="Topic" data_mc_preload_images="false" data_mc_in_preview_mode="false" data_mc_medium="non-print" data_mc_toc_path="BookTemplate|Creating Content" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta charset="utf-8" /><title></title>
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Breadcrumbs.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/plugins.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/MadCapAll.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script></head>
+    <body>
+        <h2>Creating  a New Book</h2>
+        <p>The template includes a folder, called <b>newBook</b>, that contains all of the elements required to create a new book. When you create a new project, place a copy of the <b>newBook</b> folder into your Contents folder and copy it as required to create books within the project.</p>
+        <h3>Structuring Your Content</h3>
+        <p>All of the content for a project is stored in the Contents folder. It is important that you structure the content in a consistent, logical manner to ensure that the information is easy to find and update and closely reflects the structure of the tables of contents used to build the project outputs.The projects created using this template are divided into a series of books. A book is a separate PDF document. In the HTML output, a book is represented by a top-level folder in the HTML table of contents. </p>
+        <p>Books are represented by a single folder in the project's Content folder. All of the content for the book, except for the graphics, are contained in this folder. Within the book folder are a series of chapter folders, each containing two or more topic files. Each chapter must have an h1 introductory topic file, and one or more h2-level topic files.</p>
+        <h4>The boilerplate Folder</h4>
+        <p>The <b>boilerplate</b> folder contains boiierplate material that is common to all documents and can be reused in all of your document TOCs to create the cover, frontmatter, preface, and other elements such as the index and glossary, if used. The files in this folder contain static boilerplate content or use proxies to generate content automatically (for example, the TOC or glossary). If you required different versions of these files (for example for different audiences), you can create copies and place them in different folders or give them different names.</p>
+        <p>The <b>boilerplate</b>folder contains the  following files:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" style="width: 120px;" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Audience.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Describes the audience for the book. Although it contains a boilerplate audience definition for a typical <MadCap:variable name="Default.CompanyName" /> user, you should edit or amend the definition for your particular product.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Contents.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">The Contents.htm file is preformatted with the h1.contents style and the TOC proxy. Use it to create a printed table of contents. </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Conventions.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Describes the <MadCap:variable name="Default.CompanyName" /> document conventions for command syntax, documenting UI elements, and using notes, cautions and warnings. All writers need to be familiar with, and adhere to, these conventions. Do not edit this file. </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Cover.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">The Cover.htm file is preformatted with the p.product and p.title styles and the Product and Title variables. Use it to create the document cover. </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Glossary.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">The Glossary.htm file is preformatted with the h1.appendix style and the Glossary proxy. Use it to create a printed glossary as an appendix in a single-document project. For multi-book projects, use the Glossary folder to create a Glossary book.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Index.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>The Index.htm file is preformatted with the h1.index style and the Index proxy. Use it to create a printed index. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">Related.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Lists the set of documents related to the current document. You must edit this document to list the related documents. </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">ReleaseNotes.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">Describes the purpose of the release notes and provides a link to the release notes on the <MadCap:variable name="Default.CompanyName" /> support site. </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">Support.htm</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">Lists the support contact information. Body text is from the <b>support_contacts.htm</b> snippet.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>The newBook Folder</h4>
+        <p>The <b>newBook</b> folder contains the following folders and files, which, along with the boilerplate material, you can use to create new books:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0">
+            <col class="TableStyle-Page-Column-Column1" style="width: 125px;" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">newAppendix</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">The newAppendix.htm file is preformatted with the h1.appendix style. Use it to create the first page of an appendix. Use the newTopic.htm file to add topics to the appendix if necessary.</td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">newChapter</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>The newChapter.htm file is preformatted with the h1.chapter style. Use it to create the first page of an chapter. Use the newTopic.htm file to add topics to the chapter if necessary.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="font-weight: bold;">FrontMatter.htm</td>
+                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                        <p>The FrontMatter.htm file is preformatted with the boilerplate material used in the frontmatter. This boilerplate material is contained in the <b>disclaimer.flsnp</b> and <b>trademarks.flsnp</b> snippets. The Document Information heading is conditionalized as an h4 for the print output and a h2 for the online output, so that it can be cross-referenced (from the <b>Preface/preface.htm</b> file). This document must be updated to include revision information for the book.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td class="TableStyle-Page-BodyB-Column1-Body1" style="font-weight: bold;">Preface.htm</td>
+                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                        <p>The h1 topic for the preface. The default heading for this topic is "About this document". It includes a brief description of the document and a list of cross-references to each chapter and appendix in the document. You must edit this file when creating a new book or adding or removing a new chapter or appendix.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Building the Book</h3>
+        <p>You build book by creating TOCs and targets, as described in <MadCap:xref href="../Outputs/TOC.htm">TOCs: Defining the Output Contents, Structure, and Layout</MadCap:xref> and <MadCap:xref href="../Outputs/Target.htm">Configuring Your Output Targets</MadCap:xref>.</p>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data_mc_search_type="Stem" data_mc_help_system_file_name="index.xml" data_mc_path_to_help_system="../../../" data_mc_target_type="WebHelp2" data_mc_runtime_file_type="Topic" data_mc_preload_images="false" data_mc_in_preview_mode="false" data_mc_medium="non-print" data_mc_toc_path="BookTemplate|Generating outputs" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" /><title></title>
+        <link href="../../Resources/TableStyles/List2.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/List1.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Breadcrumbs.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/plugins.min.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script> <script src="../../../Resources/Scripts/MadCapAll.js">/*<![CDATA[*/
+
+ 
+/*]]>*/</script></head>
+    <body>
+        <h2>Setting Up Your Project for Combined HTML and PDF Outputs</h2>
+        <p>This template supports  integrated HTML and PDF outputs where the HTML&#160;and PDF contain identical content, providing users the choice to view the documentation in HTML or PDF format. In this set up, you include PDF versions of the books in the project in the project's Content folder so that you can create links from the HTML home page to the individual PDF books, as described in <MadCap:xref href="../CreateContent/Home.htm">Creating the Home Page</MadCap:xref>.</p>
+        <p>To do this, you create a PDF folder in the Content directory, add the PDF files for the individual books to the folder, and then use the <b>Insert &gt; Hyperlinks</b> function to create links from the HTML to the PDF files. This is a one-time task. Once the links are created, you can overwrite the PDF files at build time with updated files that have the same file name. </p>
+        <p class="caution" MadCap:autonum="&lt;span style=&quot;color: #b90b67;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;CAUTION!&lt;/b&gt; &#160;&#160;&lt;/span&gt;">When building a project that combines HTML and PDF outputs, the PDFs must be built and published before the HTML is built and published, so that the HTML includes up-to-date PDFs when it is published. If you are building and publishing manually, simply build and publish your PDFs first. If you are building automatically, there are several methods to ensure the PDFs are up-to-date in the published HTML, as detailed in <MadCap:xref href="Target.htm#Creating2">Creating Batch Targets</MadCap:xref>.</p>
+        <h5>To set up your project for combined HTML and PDF outputs</h5>
+        <p class="ol1" MadCap:autonum="1.">Create a PDF folder in the project's Contents directory.</p>
+        <p class="ol1" MadCap:autonum="2.">Create a Destination for the PDF and set the path to the project's Contents/PDF directory.</p>
+        <p class="ol1" MadCap:autonum="3.">Set the publishing destination in the target (Publishing tab) to the destination you just created.</p>
+        <p class="ol1" MadCap:autonum="4.">Create a batch target for all of your PDF files and set each file to build and publish.</p>
+        <p class="ol1" MadCap:autonum="5.">Build the batch target to create the PDF and publish them to the Content/PDF folder.</p>
+        <p class="ol1" MadCap:autonum="6.">Create hyperlinks from the HTML Home page to the PDF files in the Content/PDF folder.</p>
+        <p>Once you have set up the folders and hyperlinks, you simply need  to build the batch target first, followed by the HTML target to create the combined HTML/PDF project. Ensure that the file names do not change. All of the hyperlinks will remain. Although you can do this manually, this is best achieved using a build script, as described in <MadCap:xref href="BuildPublish.htm">Building and Publishing Output Targets</MadCap:xref>.</p>
+    </body>
+</html>
