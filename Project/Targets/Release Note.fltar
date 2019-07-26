@@ -16,8 +16,8 @@
     <Variable
       Name="Default/Title">Release Note Template</Variable>
     <Variable
-      Name="Default/Product">Gemalto Doc Pipeline</Variable>
+      Name="Default/Product">Gemalto Doc Pipeline Latest</Variable>
     <Variable
-      Name="Default/Release">1.0</Variable>
+      Name="Default/Release">2.0</Variable>
   </Variables>
 </CatapultTarget>
